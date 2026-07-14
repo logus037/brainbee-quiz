@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOST - Millionaire</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body data-role="host">
+
+    <audio id="background" src="sound/background.mp3" loop></audio>
+    <audio id="rightsound" src="sound/right.mp3"></audio>
+    <audio id="wrongsound" src="sound/wrong.mp3"></audio>
+    <audio id="winsound" src="sound/win.mp3"></audio>
+
+    <div id="host-controls">
+        <button id="btn-audio" class="host-btn" style="background: #8b0000; font-size: 1.2em;">🔇</button>
+        
+        <div style="width:1px; height:30px; background:#555; margin:0 10px;"></div>
+
+        <button id="btn-prev" class="host-btn">⬅ Prev</button>
+        <button id="btn-reveal" class="host-btn">👁 Reveal</button>
+        <button id="btn-next" class="host-btn">➡ Next</button>
+        <button id="btn-reset" class="host-btn">⟲ Reset</button>
+    </div>
+
+    <div id="money-popup">
+        <h2>You Won</h2>
+        <div class="amount" id="popup-amount">₹0</div>
+    </div>
+
+    <div id="pre-start">
+        <h1>HOT SEAT</h1>
+        <p>Select Category:</p>
+        <select id="problem-set" style="padding:10px; font-size:1.2em; margin-bottom:20px; border-radius:5px;">
+            <option value="classes_3_4">Larva (Class 3-4)</option>
+            <option value="classes_5_7">Pupa (Class 5-7)</option>
+            <option value="classes_8_10">Adult (Class 8-10)</option>
+        </select>
+        <button id="start-btn" class="host-btn" style="background: yellow; color:black; font-size:1.2em;">Start Game</button>
+    </div>
+
+    <div id="game-over" style="display:none;">
+        <h1 style="color:red;">GAME OVER</h1>
+        <div id="final-message" style="font-size:1.5em; margin-bottom:10px;"></div>
+        <div id="final-score" style="font-size:2em; color: yellow; font-weight:bold;"></div>
+        <button id="btn-reset-gameover" class="host-btn">Play Again</button>
+    </div>
+
+    <div id="game">
+        <div id="top">
+            <div id="money">₹<span id="money-val">0</span></div>
+            <img src="img/logo.jpg" id="logo" />
+            <ul id="levels">
+                <li data-lvl="14">₹5,000</li>
+                <li data-lvl="13">₹4,000</li>
+                <li data-lvl="12">₹3,000</li>
+                <li data-lvl="11">₹2,500</li>
+                <li data-lvl="10">₹2,000</li>
+                <li data-lvl="9">₹1,500</li>
+                <li data-lvl="8">₹1,000</li>
+                <li data-lvl="7">₹750</li>
+                <li data-lvl="6">₹500</li>
+                <li data-lvl="5">₹250</li>
+                <li data-lvl="4">₹100</li>
+                <li data-lvl="3">₹75</li>
+                <li data-lvl="2">₹50</li>
+                <li data-lvl="1">₹25</li>
+                <li data-lvl="0">₹10</li>
+            </ul>
+        </div>
+
+        <div class="bottom-wrapper">
+            <div id="media-container"></div>
+
+            <div id="options">
+                <div id="fifty" class="options-button"></div>
+                <div id="phone-friend" class="options-button"></div>
+                <div id="audience" class="options-button"></div>
+            </div>
+
+            <div id="question-box">
+                <span class="big-text">Q:</span>
+                <span class="content" id="question-text"></span>
+            </div>
+
+            <div id="answer-box">
+                <div id="answer-one" class="answer"><span class="big-text">A.</span><span class="text"></span></div>
+                <div id="answer-two" class="answer"><span class="big-text">B.</span><span class="text"></span></div>
+                <div id="answer-three" class="answer"><span class="big-text">C.</span><span class="text"></span></div>
+                <div id="answer-four" class="answer"><span class="big-text">D.</span><span class="text"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+   <script src="js/socket.io.js"></script>
+    <script src="js/game-core.js"></script>
+</body>
+</html>

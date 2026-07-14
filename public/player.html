@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PLAYER - Millionaire</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body data-role="player"> 
+
+   
+
+    <audio id="background" src="sound/background.mp3" loop></audio>
+    <audio id="rightsound" src="sound/right.mp3"></audio>
+    <audio id="wrongsound" src="sound/wrong.mp3"></audio>
+    <audio id="winsound" src="sound/win.mp3"></audio>
+
+    <div id="money-popup">
+        <h2>You Won</h2>
+        <div class="amount" id="popup-amount">₹0</div>
+    </div>
+    
+    <div id="pre-start">
+        <img src="img/logo.jpg">
+        <h1>BrainBee Quiz'26</h1>
+    </div>
+
+    <div id="game-over" style="display:none;">
+        <div id="final-message"></div>
+        <div id="final-score"></div>
+    </div>
+
+    <div id="game">
+        <div id="top">
+            <div id="money">₹<span id="money-val">0</span></div>
+            <img src="img/logo.jpg" id="logo" />
+            <ul id="levels">
+                <li data-lvl="14">₹5,000</li>
+                <li data-lvl="13">₹4,000</li>
+                <li data-lvl="12">₹3,000</li>
+                <li data-lvl="11">₹2,500</li>
+                <li data-lvl="10">₹2,000</li>
+                <li data-lvl="9">₹1,500</li>
+                <li data-lvl="8">₹1,000</li>
+                <li data-lvl="7">₹750</li>
+                <li data-lvl="6">₹500</li>
+                <li data-lvl="5">₹250</li>
+                <li data-lvl="4">₹100</li>
+                <li data-lvl="3">₹75</li>
+                <li data-lvl="2">₹50</li>
+                <li data-lvl="1">₹25</li>
+                <li data-lvl="0">₹10</li>
+            </ul>
+        </div>
+
+        <div class="bottom-wrapper">
+            <div id="media-container"></div>
+
+            <div id="options">
+                <div id="fifty" class="options-button"></div>
+                <div id="phone-friend" class="options-button"></div>
+                <div id="audience" class="options-button"></div>
+            </div>
+
+            <div id="question-box">
+                <span class="big-text">Q:</span>
+                <span class="content" id="question-text"></span>
+            </div>
+
+            <div id="answer-box">
+                <div id="answer-one" class="answer"><span class="big-text">A.</span><span class="text"></span></div>
+                <div id="answer-two" class="answer"><span class="big-text">B.</span><span class="text"></span></div>
+                <div id="answer-three" class="answer"><span class="big-text">C.</span><span class="text"></span></div>
+                <div id="answer-four" class="answer"><span class="big-text">D.</span><span class="text"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+<script src="js/socket.io.js"></script>
+    <script src="js/game-core.js"></script> 
+</body>
+</html>

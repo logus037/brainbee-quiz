@@ -1,0 +1,579 @@
+/* Import the Official-Style Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* =========================================
+   BASE STYLES (NO SCROLLING)
+   ========================================= */
+* { box-sizing: border-box; }
+
+/* 1. Fix the White Background & Full Height */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+   /* 1. Firefox */
+    scrollbar-width: none; 
+    
+    /* 2. IE 10+ */
+    -ms-overflow-style: none; 
+    
+    /* Ensure scrolling is still physically possible */
+    overflow-y: auto;
+
+    /* Apply background here so it covers the whole mobile screen */
+    background: radial-gradient(circle at center, #001f3f 0%, #000000 100%);
+    background-attachment: fixed;
+    font-size: clamp(14px, 1vw + 1vh, 22px);
+    
+}
+
+/* 3. Chrome, Safari, Edge, Brave */
+::-webkit-scrollbar {
+    display: none; /* Completely removes the bar */
+    width: 0;
+    height: 0;
+}
+
+/* 1. Fix Body & Background */
+/* 1. Reset the body to be a static, non-scrolling frame */
+body {
+    font-family: 'Copperplate Gothic Light', 'Cinzel', serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll; /* Prevents scrollbars */
+    
+    /* Background stays fixed and full-screen */
+    background: radial-gradient(circle at center, #001f3f 0%, #000000 100%);
+    background-attachment: fixed;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2. Create a wrapper for your content */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Ensure content stays within bounds */
+    max-width: 100%;
+    max-height: 100%;
+    
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
+    /* This shrinks everything inside without causing "phantom" scrolling */
+    transform: scale(0.82); 
+    transform-origin: center;
+}
+
+/* 2. Fix Game Container Alignment */
+#game {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    
+    /* Center the content INSIDE the game box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* changed from flex-start to center */
+    align-items: center;
+    
+    /* Scale from the MIDDLE, so it doesn't float up */
+
+    transform-origin: center center; 
+    
+    padding-bottom: 2vh;
+    box-sizing: border-box;
+}
+
+/* 3. Adjust Media Container Spacing */
+#media-container {
+    /* Reduced slightly to prevent pushing content off-screen */
+    margin-top: 40px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 60px;
+}
+/* =========================================
+   HOST SPECIFIC LAYOUT FIXES
+   ========================================= */
+body[data-role="host"] {
+    padding-top: 70px; /* space for host bar */
+    overflow-y: auto !important; 
+    height: auto !important;
+}
+
+body[data-role="host"] #game {
+    min-height: calc(100vh - 70px);
+    height: auto;
+    overflow: visible;
+    padding-top: 10px;
+}
+
+/* =========================================
+   HOST CONTROL DECK (Top Bar)
+   ========================================= */
+#host-controls {
+    position: fixed; top: 0; left: 0; width: 100%; height: 70px;
+    background: linear-gradient(180deg, #1a1a1a 0%, #000 100%);
+    border-bottom: 3px solid #ff9800;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.8);
+    display: flex; justify-content: center; align-items: center; gap: 15px;
+    z-index: 9999;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.host-btn {
+    background: linear-gradient(to bottom, #333, #111);
+    color: #fff; border: 1px solid #555; padding: 8px 20px;
+    border-radius: 5px; font-weight: bold; cursor: pointer;
+    text-transform: uppercase; font-size: 0.9em; transition: all 0.2s;
+}
+.host-btn:hover { background: #444; border-color: #888; transform: translateY(-1px); }
+#btn-reveal { background: linear-gradient(to bottom, #006400, #004d00); border-color: #008000; }
+#btn-next { background: linear-gradient(to bottom, #ff9800, #cc7a00); color: black; border-color: #ffb74d; }
+#btn-reset { background: linear-gradient(to bottom, #8b0000, #660000); border-color: #cc0000; }
+
+/* =========================================
+   MAIN GAME CONTAINER (Centered Pack)
+   ========================================= */
+#game {
+    width: 100%; height: 100%;
+    max-width: 1600px; margin: 0 auto;
+    
+    /* CENTERING MAGIC */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns items from top down */
+    align-items: center;
+    padding-bottom: 2vh;
+    
+    /* Scale down slightly to fit everything nicely */
+    transform: scale(0.95);
+    transform-origin: top center;
+}
+
+/* =========================================
+   1. TOP SECTION: Logo
+   ========================================= */
+#top {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5vh;
+}
+
+/* =========================================
+   LOGO STYLES
+   ========================================= */
+#logo {
+    height: 32vh;        
+    width: auto;
+    
+    /* FIX: Moves logo down without pushing other elements */
+    position: relative;
+    top: 40px; 
+    
+    filter: drop-shadow(0 0 15px black);
+    z-index: 1;
+    
+    /* Smooth transition for hiding */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* HIDE LOGO AUTOMATICALLY WHEN IMAGE IS PRESENT */
+body.has-media #logo {
+    display: none; /* Completely removes logo to make room for image */
+}
+
+/* OPTIONAL: If you want the image to be bigger when logo is gone */
+body.has-media #media-container {
+    height: 40vh; /* Expands image area */
+}
+
+/* MONEY LADDER (Fixed to Right of Screen) */
+#levels {
+    position: absolute; top: 10px; right: 20px; width: 260px;
+    background: rgba(0, 15, 30, 0.85); border: 1px solid #4a90e2; border-radius: 10px;
+    padding: 10px; list-style: none; text-align: right; font-family: monospace; font-size: 2vh;
+    box-shadow: 0 0 15px black; z-index: 10;
+}
+#levels li { padding: 1px 8px; color: rgb(203, 203, 66); }
+#levels li.active { background: rgb(203, 203, 66); color: black; font-weight: 900; border-radius: 4px; }
+#levels li.won { color: #00ff00; }
+#levels li:nth-child(5n+1) { color: white; }
+
+/* MONEY DISPLAY */
+#money {
+    position: absolute; top: 10px; left: 20px;
+    font-size: 4vh; color: rgb(203, 203, 66); font-weight: bold;
+    text-shadow: 2px 2px 0 black;
+}
+
+/* =========================================
+   2. WRAPPER: Media + Lifelines + Q + A
+   ========================================= */
+.bottom-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* MEDIA */
+#media-container {
+    height: 15vh;
+    display: flex; justify-content: center; align-items: center;
+    margin-bottom: 10px;
+}
+#media-container img { max-height: 100%; border: 2px solid white; border-radius: 10px; }
+
+/* LIFELINES (Glued Above Question) */
+#options {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    
+    /* --- FIXED POSITIONING --- */
+    margin-top: 20px;   /* Pushes down from Media */
+    margin-bottom: 5px; /* Pulls closer to Question Box */
+    
+    z-index: 5;
+}
+
+.options-button {
+    width: 65px; height: 65px; border-radius: 50%; border: 2px solid #4a90e2;
+    background-color: #001a33; background-repeat: no-repeat;
+    background-position: center; background-size: 60%;
+    cursor: pointer; box-shadow: 0 0 15px rgba(74,144,226,0.4);
+    transition: transform 0.2s;
+}
+.options-button:hover { transform: scale(1.1); box-shadow: 0 0 25px #4a90e2; border-color: white; }
+.options-button.used { filter: grayscale(100%); opacity: 0.3; pointer-events: none; }
+
+/* ICONS */
+#fifty { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-weight='900' font-size='32' fill='%234a90e2'%3E50:50%3C/text%3E%3C/svg%3E"); }
+#phone-friend { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234a90e2'%3E%3Cpath d='M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z'/%3E%3C/svg%3E"); }
+#audience { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234a90e2'%3E%3Cpath d='M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z'/%3E%3C/svg%3E"); }
+
+/* QUESTION BOX */
+#question-box {
+    width: 90%; margin: 0 auto 15px auto;
+    background: linear-gradient(180deg, #001133, #0b2a4a, #001133);
+    border: 3px solid white; border-radius: 40px;
+    min-height: 12vh;
+    display: flex; align-items: center; justify-content: center;
+    padding: 10px 30px; position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    margin-top: 10px; /* Small gap from lifelines */
+}
+#question-box::before {
+    content: ""; position: absolute; width: 100%; height: 1px;
+    background: linear-gradient(90deg, transparent, #4a90e2, transparent);
+    top: 50%; left: 0; opacity: 0.5;
+}
+#question-text { position: relative; z-index: 2; color: white !important; font-size: 3vh; text-align: center; }
+.big-text { display: none; }
+
+/* ANSWERS */
+#answer-box {
+    width: 90%; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 15px;
+    height: 25vh;
+}
+.answer {
+    background: linear-gradient(180deg, #001133, #001f3f, #001133);
+    border: 2px solid #aaa; border-radius: 40px;
+    display: flex; align-items: center; padding: 0 25px;
+    color: white; font-size: 2.5vh; cursor: pointer; position: relative;
+}
+.answer:hover { border-color:rgb(203, 203, 66); background: #002855; }
+.answer .big-text { display: inline-block; color: rgb(203, 203, 66); margin-right: 15px; font-weight: bold; }
+.answer.selected { background: rgb(203, 203, 66); color: black; border-color: white; }
+.answer.selected .big-text { color: black; }
+.answer.correct { background: #28a745; animation: flash 0.5s infinite alternate; }
+.answer.wrong { background: #dc3545; }
+.answer.opacity-hide { visibility: hidden; }
+
+@keyframes flash { from { opacity: 1; } to { opacity: 0.6; } }
+
+/* SCREENS */
+#pre-start, #game-over {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.98); z-index: 2000;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    text-align: center;
+}
+#pre-start h1 { color: rgb(203, 203, 66); font-size: 5vh; letter-spacing: 5px; }
+
+/* =========================================
+   MONEY POPUP – FORCE VISIBILITY
+========================================= */
+#money-popup {
+    position: fixed; top: 50%; left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 260px; height: 180px;
+    background: radial-gradient(circle at top, #ffd700, rgb(203, 203, 66));
+    border: 5px solid white; border-radius: 22px;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    color: black; z-index: 10000; pointer-events: none;
+    transition: transform 0.4s ease;
+}
+#money-popup.show { transform: translate(-50%, -50%) scale(1); }
+#money-popup h2 { margin: 0; padding: 0; font-size: 3.2vh; font-weight: 800; }
+#money-popup .amount { margin-top: 8px; font-size: 4.5vh; font-weight: 900; }
+
+/* MOBILE */
+@media (max-width: 768px) {
+    body[data-role="host"] { padding-top: 0; }
+    #host-controls { position: relative; height: auto; flex-wrap: wrap; padding: 10px; }
+    #levels { display: none; }
+    #logo { max-height: 15vh; }
+    #answer-box { display: flex; flex-direction: column; height: auto; flex: 1; gap: 5px; }
+    .answer { flex: 1; font-size: 2vh; }
+}
+
+/* =========================================
+   GAME OVER SCREEN
+========================================= */
+#game-over { background: radial-gradient(circle at center, #120000 0%, #000 70%); animation: fadeIn 0.8s ease-in; }
+#game-over h1 { font-size: 6vh; color: #ff2e2e; letter-spacing: 4px; text-shadow: 0 0 20px rgba(255,0,0,0.6); margin-bottom: 20px; }
+#final-message { font-size: 3vh; color: #ffffff; margin-bottom: 10px; }
+#final-score { font-size: 4vh; color: rgb(203, 203, 66); font-weight: 900; text-shadow: 0 0 15px rgba(255,152,0,0.7); margin-bottom: 30px; }
+#btn-reset-gameover { font-size: 1.2em; padding: 12px 30px; background: linear-gradient(to bottom, rgb(203, 203, 66), #cc7a00); color: black; border-radius: 8px; border: none; }
+#btn-reset-gameover:hover { transform: scale(1.05); }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* =========================================
+   PRE-START
+========================================= */
+#pre-start { background: radial-gradient(circle at center, #001a33 0%, #000 70%); }
+#pre-start h1 { font-size: 6vh; color: rgb(203, 203, 66); letter-spacing: 6px; margin-bottom: 20px; text-shadow: 0 0 20px rgba(255,152,0,0.6); }
+#pre-start p { font-size: 2.5vh; margin-bottom: 10px; color: #ddd; }
+#problem-set { appearance: none; background: linear-gradient(180deg, #002855, #001a33); color: white; border: 2px solid #4a90e2; padding: 12px 20px; font-size: 1.2em; border-radius: 10px; box-shadow: 0 0 15px rgba(74,144,226,0.5); margin-bottom: 25px; cursor: pointer; }
+#problem-set:hover { border-color: rgb(203, 203, 66); }
+#problem-set option { color: black; }
+#start-btn { padding: 14px 40px; font-size: 1.4em; font-weight: bold; letter-spacing: 2px; background: linear-gradient(to bottom, rgb(203, 203, 66), #cc7a00); color: black; border-radius: 10px; box-shadow: 0 0 25px rgba(255,152,0,0.7); }
+#start-btn:hover { transform: scale(1.08); }
+
+/* VIEWER = READ ONLY */
+body[data-role="viewer"] .answer,
+body[data-role="viewer"] .options-button {
+    pointer-events: none;
+}
+/* Remove special color for milestones since they don't exist anymore */
+#levels li:nth-child(5n+1) { 
+    color: rgb(203, 203, 66); /* Make them orange like everything else */
+}
+
+/* Ensure the 'Won' state is still green */
+#levels li.won { 
+    color: #00ff00; 
+    text-shadow: 0 0 5px green; 
+}
+/* Add spacing to the container holding the audio, not the audio itself */
+#media-container {
+    margin-top: 60px; /* Pushes EVERYTHING inside this box down */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 60px; /* Keeps space reserved */
+}
+
+/* Style the audio player specifically */
+audio {
+    width: 50%;
+    height: 55px;
+    border-radius: 18px;
+    outline: none;
+    
+    /* 👇 INCREASE THIS NUMBER to move it down further */
+    margin-top: 3px; 
+    
+    /* Brave often ignores background colors on audio, but we try: */
+    background-color: #f1f3f4; 
+    border: 3px solid #00d4ff; /* Cyan Border to match theme */
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.6); /* Stronger Glow */
+    display: block;
+}
+.scroll-overlay {
+  width: 300px;
+  height: 200px;
+  overflow-y: overlay; /* This is the magic property for WebKit */
+  
+  /* FIREFOX Fallback */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* FIREFOX Hover */
+.scroll-overlay:hover {
+  scrollbar-color: #a0a0a0 transparent;
+}
+
+/* CHROME, EDGE, SAFARI */
+.scroll-overlay::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.scroll-overlay::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+.scroll-overlay::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+/* Only show when hovering the CONTAINER */
+.scroll-overlay:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+}
+
+/* Make it darker when hovering the SCROLLBAR itself */
+.scroll-overlay::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* ======================================================
+   📱 MOBILE "MINIATURE MONITOR" ADD-ON
+   Paste this at the VERY BOTTOM of style.css
+   ====================================================== */
+
+@media (max-width: 768px) {
+
+    /* 1. DARK ROOM BACKGROUND */
+    body {
+        background: #050505 !important; /* Dark surroundings */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden; /* Lock the page scroll */
+    }
+
+    /* 2. THE MONITOR FRAME (The Game Container) */
+    #game {
+        width: 92vw !important;        /* Width of the monitor */
+        height: 85vh !important;       /* Height of the monitor */
+        max-height: 800px;
+        
+        /* The Monitor Bezel */
+        border: 8px solid #222;        
+        border-radius: 25px;           /* Rounded corners */
+        
+        /* The Screen Background */
+        background: radial-gradient(circle at center, #001f3f 20%, #000 120%);
+        
+        /* Depth & Glow Effects */
+        box-shadow: 
+            0 0 0 2px #333,             /* Outer thin rim */
+            0 20px 50px rgba(0,0,0,1),  /* Heavy drop shadow */
+            inset 0 0 30px rgba(0,0,0,0.8); /* Inner screen shadow */
+            
+        /* Layout Inside the Monitor */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Space out top and bottom */
+        padding: 15px !important;
+        margin: 0 !important;
+        transform: none !important;     /* Disable the desktop scaling */
+        overflow-y: auto;               /* Allow scrolling inside the monitor if needed */
+        position: relative;
+    }
+
+    /* 3. SCREEN GLARE / REFLECTION (Glass Effect) */
+    #game::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 30%;
+        background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
+        border-radius: 18px 18px 0 0; /* Match top inner radius */
+        pointer-events: none;
+        z-index: 99;
+    }
+
+    /* 4. SMOOTH LAYOUT ADJUSTMENTS */
+    
+    /* Shrink the Logo nicely */
+    #logo {
+        height: 12vh !important;
+        top: 0 !important;
+        margin-bottom: 10px;
+    }
+    
+    /* Compact Money Display */
+    #money {
+        font-size: 2.5vh !important;
+        top: 15px !important;
+        left: 15px !important;
+    }
+
+    /* Adjust Media/Image container */
+    #media-container {
+        height: 18vh !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    /* Make Audio Player fit */
+    audio {
+        width: 80% !important;
+        height: 45px !important;
+    }
+
+    /* Compact Lifelines */
+    #options {
+        margin-top: 5px !important;
+        gap: 20px !important;
+        margin-bottom: 15px !important;
+    }
+    .options-button {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    /* Stack Answers Smoothly */
+    #answer-box {
+        display: flex !important;
+        flex-direction: column;
+        height: auto !important;
+        gap: 8px !important;
+        width: 100% !important;
+        padding-bottom: 10px; /* Space at bottom of screen */
+    }
+
+    .answer {
+        height: 50px !important; /* Fixed comfortable height */
+        font-size: 1.8vh !important;
+        border-radius: 15px !important; /* Softer buttons */
+        padding: 0 15px !important;
+    }
+    
+    /* Question Text Sizing */
+    #question-box {
+        min-height: 10vh;
+        border-radius: 20px;
+        padding: 15px;
+    }
+    #question-text {
+        font-size: 2.2vh !important;
+        line-height: 1.4;
+    }
+
+    /* Hide Desktop Elements */
+    #levels { display: none !important; }
+}
