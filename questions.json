@@ -1,0 +1,995 @@
+{
+  "meta": {
+    "version": "13.0",
+    "language": "English",
+    "rules": {
+      "difficulty_split": { "easy": "₹10–₹100", "hard": "₹100–₹5000" },
+      "no_math": true,
+      "no_general_knowledge": true,
+      "english_only": true,
+      "unique_question_ids": true
+    }
+  },
+  "classes_3_4": {
+    "easy": [
+      { "id": "C3E001", "difficulty": "easy", "type": "image", "question": "Which letter is missing? ENGB__ZZ", "options": ["A", "E", "U", "O"], "answer": 2, "media": "/img/questions/logo_engbuzz.jpg" },
+      { "id": "C3E002", "difficulty": "easy", "type": "image", "question": "Identify this teacher.", "options": ["Rishana Mam", "Hajara Mam", "Nazariya Mam", "Soumya Mam"], "answer": 0, "media": "/img/questions/teacher_rishana.jpg" },
+      { "id": "C3E003", "difficulty": "easy", "type": "image", "question": "Identify the animal.", "options": ["Lion", "Tiger", "Cat", "Dog"], "answer": 0, "media": "/img/questions/lion.jpg" },
+      { "id": "C3E004", "difficulty": "easy", "type": "image", "question": "What is the boy doing?", "options": ["Sleeping", "Reading", "Eating", "Running"], "answer": 1, "media": "/img/questions/boy_reading.jpg" },
+      { "id": "C3E005", "difficulty": "easy", "type": "image", "question": "Identify the fruit.", "options": ["Apple", "Banana", "Orange", "Grapes"], "answer": 1, "media": "/img/questions/banana.jpg" },
+      { "id": "C3E006", "difficulty": "easy", "type": "image", "question": "Which shape is this?", "options": ["Circle", "Square", "Triangle", "Star"], "answer": 0, "media": "/img/questions/shape_circle.jpg" },
+      { "id": "C3E009", "difficulty": "easy", "type": "image", "question": "What weather is shown?", "options": ["Sunny", "Rainy", "Snowy", "Windy"], "answer": 1, "media": "/img/questions/weather_rain.jpg" },
+      { "id": "C3E010", "difficulty": "easy", "type": "image", "question": "Identify the body part.", "options": ["Hand", "Leg", "Eye", "Ear"], "answer": 2, "media": "/img/questions/body_eye.jpg" },
+      { "id": "C3E011", "difficulty": "easy", "type": "image", "question": "Identify this eminent person.", "options": ["Minhaj Sir", "Shafi Sir", "Shameem Sir", "Usman Sir"], "answer": 2, "media": "/img/questions/shami.jpg" },
+      { "id": "C3E012", "difficulty": "easy", "type": "image", "question": "Who is this helper?", "options": ["Doctor", "Teacher", "Policeman", "Driver"], "answer": 2, "media": "/img/questions/policeman.jpg" },
+      { "id": "C3E013", "difficulty": "easy", "type": "image", "question": "What is the girl doing?", "options": ["Singing", "Dancing", "Crying", "Writing"], "answer": 1, "media": "/img/questions/girl_dancing.jpg" },
+      { "id": "C3E014", "difficulty": "easy", "type": "image", "question": "Identify the bird.", "options": ["Crow", "Parrot", "Peacock", "Eagle"], "answer": 1, "media": "/img/questions/parrot.jpg" },
+      { "id": "C3E015", "difficulty": "easy", "type": "image", "question": "Which room is this?", "options": ["Kitchen", "Bathroom", "Bedroom", "Classroom"], "answer": 3, "media": "/img/questions/classroom.jpg" },
+      { "id": "C3E016", "difficulty": "easy", "type": "image", "question": "Identify the object.", "options": ["Pencil", "Eraser", "Sharpener", "Ruler"], "answer": 0, "media": "/img/questions/pencil.jpg" },
+      { "id": "C3E017", "difficulty": "easy", "type": "image", "question": "Color of the car?", "options": ["Red", "Blue", "Green", "Yellow"], "answer": 0, "media": "/img/questions/car_red.jpg" },
+      { "id": "C3E018", "difficulty": "easy", "type": "image", "question": "Identify the flower.", "options": ["Rose", "Lotus", "Sunflower", "Lily"], "answer": 2, "media": "/img/questions/sunflower.jpg" },
+      { "id": "C3E019", "difficulty": "easy", "type": "image", "question": "Where is the cat?", "options": ["On the table", "Under the table", "In the box", "Near the tree"], "answer": 1, "media": "/img/questions/cat_under_table.jpg" },
+      { "id": "C3E031", "difficulty": "easy", "type": "audio", "question": "What did you hear?", "options": ["Good Night", "Good Morning", "Goodbye", "Thank You"], "answer": 1, "media": "/audio/questions/good_morning.mp3" },
+      { "id": "C3E032", "difficulty": "easy", "type": "audio", "question": "Which animal makes this sound?", "options": ["Cat", "Dog", "Cow", "Lion"], "answer": 1, "media": "/audio/questions/dog_bark.mp3" },
+      { "id": "C3E033", "difficulty": "easy", "type": "audio", "question": "What sound is this?", "options": ["Bell ringing", "Car honking", "Door closing", "Clapping"], "answer": 0, "media": "/audio/questions/bell_ring.mp3" },
+      { "id": "C3E034", "difficulty": "easy", "type": "audio", "question": "Identify the vehicle sound.", "options": ["Train", "Car", "Bicycle", "Airplane"], "answer": 1, "media": "/audio/questions/car_horn.mp3" },
+      { "id": "C3E035", "difficulty": "easy", "type": "audio", "question": "Which bird says this?", "options": ["Crow", "Sparrow", "Duck", "Rooster"], "answer": 2, "media": "/audio/questions/duck_quack.mp3" },
+      { "id": "C3E036", "difficulty": "easy", "type": "audio", "question": "Identify the weather sound.", "options": ["Wind", "Rain", "Thunder", "Sunshine"], "answer": 1, "media": "/audio/questions/rain_sound.mp3" },
+      { "id": "C3E046", "difficulty": "easy", "type": "text", "question": "Choose the correct spelling:", "options": ["Frend", "Friend", "Freind", "Frinds"], "answer": 1 },
+      { "id": "C3E049", "difficulty": "easy", "type": "text", "question": "Choose the correct sentence:", "options": ["She go to school", "She goes to school", "She going school", "She gone school"], "answer": 1 },
+      { "id": "C3E054", "difficulty": "easy", "type": "text", "question": "Choose correct sentence:", "options": ["I has a book", "I have a book", "I having a book", "I had have a book"], "answer": 1 },
+      { "id": "C3E055", "difficulty": "easy", "type": "text", "question": "Which word cannot be seen?", "options": ["Tree", "Wind", "Car", "House"], "answer": 1 },
+      { "id": "C3E056", "difficulty": "easy", "type": "text", "question": "Opposite of 'Big':", "options": ["Large", "Huge", "Small", "Tall"], "answer": 2 },
+      { "id": "C3E058", "difficulty": "easy", "type": "text", "question": "Rhymes with 'Cat':", "options": ["Car", "Cut", "Bat", "Ball"], "answer": 2 },
+      { "id": "C3E059", "difficulty": "easy", "type": "text", "question": "Which is a number?", "options": ["Ten", "Tin", "Tan", "Ton"], "answer": 0 },
+      { "id": "C3E064", "difficulty": "easy", "type": "text", "question": "Opposite of Above':", "options": ["Below", "Down", "Ground", "Over"], "answer": 0 },
+      { "id": "C3E068", "difficulty": "easy", "type": "text", "question": "Young one of Dog:", "options": ["Kitten", "Puppy", "Calf", "Cub"], "answer": 1 },
+      { "id": "C3E072", "difficulty": "easy", "type": "text", "question": "Correct Article: ___ umbrella.", "options": ["A", "An", "The", "None"], "answer": 1 },
+      { "id": "C3E074", "difficulty": "easy", "type": "text", "question": "Plural of 'Foot':", "options": ["Foots", "Feets", "Feet", "Foot"], "answer": 2 },
+      { "id": "C3E075", "difficulty": "easy", "type": "text", "question": "Past tense of 'Run':", "options": ["Runned", "Ran", "Running", "Run"], "answer": 1 }
+    ],
+    "hard": [
+      { "id": "C3H_TIME2", "difficulty": "hard", "type": "image", "question": "What time is shown?", "options": ["4 o'clock", "Quarter past four", "Half past four", "Quarter to five"], "answer": 1, "media": "/img/questions/clock_415.jpg", "explanation": "The minute hand is on 3." },
+      { "id": "C3H_TIME3", "difficulty": "hard", "type": "image", "question": "What time is shown?", "options": ["10 o'clock", "Quarter past ten", "Quarter to eleven", "Three Fourth of Ten"], "answer": 2, "media": "/img/questions/clock_1045.jpg", "explanation": "The minute hand is on 9." },
+
+      { "id": "C3H_TIME6", "difficulty": "hard", "type": "image", "question": "What time is shown?", "options": ["1 o'clock", "Quarter past one", "Half past one", "Quarter to two"], "answer": 1, "media": "/img/questions/clock_115.jpg", "explanation": "Minute hand is on 3." },
+      { "id": "C3H_TIME7", "difficulty": "hard", "type": "image", "question": "What time is shown?", "options": ["8 o'clock", "Quarter to nine", "Quarter past eight", "Half past eight"], "answer": 1, "media": "/img/questions/clock_845.jpg", "explanation": "Minute hand is on 9." },
+     
+
+  {
+    "id": "C3H_TRICK_IMG_04",
+    "difficulty": "hard",
+    "type": "image",
+    "question": "Which word rhymes with the object shown",
+    "options": ["Fear", "Near", "Pear", "Hear"],
+    "answer": 2,
+    "media": "/img/questions/animal_bear.jpg",
+    "explanation": "English is tricky! 'Bear' rhymes with 'Pear' (Air sound), not 'Fear' (Ear sound)."
+  },
+  {
+    "id": "C3H_ODD1",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which animal does not belong to the feline family?",
+    "options": [
+      "Lion",
+      "Tiger",
+      "Leopard",
+      "Elephant"
+    ],
+    "answer": 3,
+   
+    "explanation": "Elephant is not a feline; others are big cats."
+  },
+  {
+    "id": "C3H_ODD2",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which fruit is not tropical?",
+    "options": [
+      "Banana",
+      "Mango",
+      "Apple",
+      "Pineapple"
+    ],
+    "answer": 2,
+   
+    "explanation": "Apple is not typically considered a tropical fruit."
+  },
+  {
+    "id": "C3H_ODD3",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which vehicle is designed for voyage?",
+    "options": [
+      "Car",
+      "Bus",
+      "Bike",
+      "Boat"
+    ],
+    "answer": 3,
+    
+    "explanation": "Boat is used on water; others are land vehicles."
+  },
+  {
+    "id": "C3H_ODD4",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which bird is a raptor?",
+    "options": [
+      "Parrot",
+      "Crow",
+      "Eagle",
+      "Dove"
+    ],
+    "answer": 2,
+    
+    "explanation": "Eagle is a raptor; others are non-raptors."
+  },
+  {
+    "id": "C3H_ODD5",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which piece of furniture is primarily used for napping?",
+    "options": [
+      "Chair",
+      "Table",
+      "Sofa",
+      "Bed"
+    ],
+    "answer": 3,
+   
+    "explanation": "Bed is used for sleeping; others are for sitting or working."
+  },
+  
+  {
+    "id": "C3H_ODD8",
+    "difficulty": "hard",
+    "type": "image",
+    "question": "Which of these is NOT a compound word?",
+    "options": [
+      "Starfish",
+      "Jellyfish",
+      "Seahorse",
+      "Octopus"
+    ],
+    "answer": 3,
+    "media": "/img/questions/odd_compound_sea.jpg",
+    "explanation": "Star+fish, Jelly+fish, Sea+horse are compound words. Octopus is a single word."
+  },
+  {
+  "id": "C3H_ODD9_VICIOUS",
+  "difficulty": "hard",
+  "type": "image",
+  "question": "Which of these 'U' words actually takes the article 'A' (NOT 'An')?",
+  "options": [
+    "Umpire",
+    "Umbrella",
+    "Uniform",
+    "Uncle"
+  ],
+  "answer": 2,
+  "media": "/img/questions/odd_article.jpg",
+  "explanation": "A Phonetic Trap! Articles follow SOUND, not spelling. 'Umpire', 'Umbrella', and 'Uncle' all start with the vowel sound 'Uh' (An). But 'Uniform' starts with the consonant sound 'YOO' (like Yellow), so it takes 'A'."
+},
+
+      { "id": "C3H002", "difficulty": "hard", "type": "text", "question": "Find the ODD one out:", "options": ["Monday", "Tuesday", "January", "Friday"], "answer": 2, "explanation": "January is a month." },
+      { "id": "C3H003", "difficulty": "hard", "type": "text", "question": "Which sentence correctly describes the flickering light?", "options": ["The light is flicker", "The light is flickering", "The light flickered is", "The light flickering"], "answer": 1, "explanation": "Action happening now requires 'is' + 'ing'." },
+      { "id": "C3H004", "difficulty": "hard", "type": "text", "question": "Identify the verb in the sentence: 'The dog ran fast.'", "options": ["The", "Dog", "Ran", "Fast"], "answer": 2, "explanation": "Ran is the action word." },
+      { "id": "C3H005", "difficulty": "hard", "type": "text", "question": "Find the ODD one out:", "options": ["Happy", "Sad", "Angry", "Table"], "answer": 3, "explanation": "Table is a thing; others are feelings." },
+      { "id": "C3H006", "difficulty": "hard", "type": "text", "question": "What is the opposite of 'Difficult'?", "options": ["Hard", "Obvious", "Tough", "Heavy"], "answer": 1, "explanation": "Easy is the opposite of Difficult." },
+      { "id": "C3H007", "difficulty": "hard", "type": "text", "question": "Which word describes a blocked sink?", "options": ["Clog", "Clogged", "Clogging", "Cloggy"], "answer": 1, "explanation": "Adjective form." },
+      { "id": "C3H010", "difficulty": "hard", "type": "text", "question": "Meaning of Address as noun:", "options": ["To speak", "Native place", "Shout", "Question"], "answer": 1, "explanation": "A place where someone lives." },
+   {
+  "id": "C3H011_VICIOUS_2",
+  "difficulty": "hard",
+  "type": "text",
+  "question": "Which of these is a REAL Compound Word (where Part A + Part B = Meaning)?",
+  "options": [
+    "Notice",
+    "Carpet",
+    "Mango",
+    "Raincoat"
+  ],
+  "answer": 3,
+  "explanation": "Visual Trap! 1) 'Notice' is not Ice you typically notice. 2) A 'Carpet' is not a Pet in a Car. 3) A 'Mango' is not a Man going somewhere. 4) Only 'Raincoat' is literal: a Coat for the Rain."
+},
+      { "id": "C3H013", "difficulty": "hard", "type": "text", "question": "Group of soldiers:", "options": ["crew", "panel", "squad", "batch"], "answer": 2, "explanation": "A squad of soldiers." },
+      { "id": "C3H014", "difficulty": "hard", "type": "text", "question": "Which word describes a sound?", "options": ["Blue", "Shrill", "Soft", "Harsh"], "answer": 1, "explanation": "Loud describes noise." },
+      { "id": "C3H015", "difficulty": "hard", "type": "text", "question": "Identify the subject: 'The birds fly.'", "options": ["The", "Birds", "Fly", "None"], "answer": 1, "explanation": "Birds are doing the action." },
+      { "id": "C3H018", "difficulty": "hard", "type": "text", "question": "Correct spelling:", "options": ["Tabel", "Table", "Tabal", "Tabel"], "answer": 1, "explanation": "Table is correct." },
+      { "id": "C3H019", "difficulty": "hard", "type": "text", "question": "Opposite of 'City':", "options": ["Countryside", "Suburb", "Burg", "Town"], "answer": 0, "explanation": "Last is opposite of First." },
+  {
+    "id": "C3H_TRICK_01_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which specific collective noun describes a group of Sheep?",
+    "options": [
+      "A Herd",
+      "A Pack",
+      "A Flock",
+      "A Swarm"
+    ],
+    "answer": 2,
+    "explanation": "The Animal Trap! Wolves come in Packs, Cattle in Herds, and Bees in Swarms. Sheep specifically gather in a 'Flock'. Don't mix them up!"
+  },
+  {
+    "id": "C3H_TRICK_02_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which number is misspelled?",
+    "options": [
+      "Four",
+      "Fourteen",
+      "Fourty",
+      "Fourth"
+    ],
+    "answer": 2,
+    "explanation": "The 'U' Trap! Four, Fourteen, and Fourth all keep the 'U'. But in 40, the 'U' disappears. It is spelled F-O-R-T-Y."
+  },
+  {
+    "id": "C3H_TRICK_03_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Choose the correct article based on SOUND: 'She is ___ University student.'",
+    "options": [
+      "an",
+      "the",
+      "a",
+      "no article"
+    ],
+    "answer": 2,
+    "explanation": "The Phonetic Trap! 'University' starts with the letter U (vowel), but the SOUND is 'YOO' (consonant). Therefore, we treat it like 'Yellow' and use 'A'."
+  },
+  {
+    "id": "C3H_TRICK_04_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which word shows belonging? 'The dog wagged ___ tail.'",
+    "options": [
+      "it's",
+      "its",
+      "its'",
+      "it"
+    ],
+    "answer": 1,
+    "explanation": "The Apostrophe Trap! Usually, apostrophes show possession (Tom's). But for the word 'It', the apostrophe ONLY means 'It is'. Possession is simply 'Its'."
+  },
+  {
+    "id": "C3H_TRICK_05_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "What is the Past Tense of 'Put'?",
+    "options": [
+      "Putted",
+      "Pat",
+      "Put",
+      "Putting"
+    ],
+    "answer": 2,
+    "explanation": "The Lazy Verb Trap! 'Put' is an irregular verb that refuses to change. Yesterday I put, today I put. 'Putted' does not exist (unless you are playing golf!)."
+  },
+  {
+    "id": "C3H_TRICK_06_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which of these is grammatically IMPOSSIBLE?",
+    "options": [
+      "I have three chairs.",
+      "I have three tables.",
+      "I have three furnitures.",
+      "I have three lamps."
+    ],
+    "answer": 2,
+    "explanation": "The Uncountable Trap! You can count chairs and tables, but 'Furniture' is a collective concept (like Water). It has no plural form."
+  },
+  {
+    "id": "C3H_TRICK_07_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which preposition is used strictly for DAYS?",
+    "options": [
+      "In Tuesday",
+      "At Tuesday",
+      "On Tuesday",
+      "By Tuesday"
+    ],
+    "answer": 2,
+    "explanation": "The Calendar Rule! We meet AT a time, IN a month/year, but ON a day. 'On Tuesday' is the only correct choice."
+  },
+  {
+    "id": "C3H_TRICK_08_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Preposition Check: 'I wrote the letter ___ ink, ___ a pen.'",
+    "options": [
+      "with / in",
+      "in / with",
+      "by / with",
+      "in / by"
+    ],
+    "answer": 1,
+    "explanation": "The Tool Trap! You use a tool 'WITH' your hand (With a pen). But you write 'IN' the medium (In ink, In pencil, In blood)."
+  },
+  {
+    "id": "C3H_TRICK_09_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which sentence is grammatically WRONG?",
+    "options": [
+      "I am having a brother.",
+      "I have a brother.",
+      "I am eating a pizza.",
+      "I am having fun."
+    ],
+    "answer": 0,
+    "explanation": "The Stative Verb Trap! 'Having' means experiencing (having fun) or eating (having lunch). You cannot 'be having' a relationship or possession. You simply 'Have' a brother."
+  },
+  {
+    "id": "C3H_TRICK_10_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Identify the Adjective:",
+    "options": [
+      "Beauty",
+      "Beautify",
+      "Beautifully",
+      "Beautiful"
+    ],
+    "answer": 3,
+    "explanation": "Word Family Trap! Beauty is a Noun (Thing). Beautify is a Verb (Action). Beautifully is an Adverb (How). Only 'Beautiful' describes a noun."
+  },
+ 
+  {
+    "id": "C3H_TRICK_12_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "I saw seven _____ in the forest.",
+    "options": [
+      "Deers",
+      "Deeres",
+      "Deer",
+      "Doers"
+    ],
+    "answer": 2,
+    "explanation": "The Plural Trap! Most words add 'S'. But Deer, Sheep, and Fish are 'Zero Plurals'. They do not change form."
+  },
+  {
+    "id": "C3H_TRICK_13_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which phrase is common but technically INCORRECT?",
+    "options": [
+      "My Uncle",
+      "My Cousin Brother",
+      "My Nephew",
+      "My Niece"
+    ],
+    "answer": 1,
+    "explanation": "The Superfluous Word Trap! In English, the word 'Cousin' covers both genders. Adding 'Brother' or 'Sister' is redundant and incorrect."
+  },
+  {
+    "id": "C3H_TRICK_14_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Yesterday, he _____ his leg.",
+    "options": [
+      "Hurted",
+      "Hart",
+      "Hurt",
+      "Hurting"
+    ],
+    "answer": 2,
+    "explanation": "Another Lazy Verb! Like 'Put', 'Hurt' is irregular. It never changes to 'Hurted'."
+  },
+  {
+    "id": "C3H_TRICK_15_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which of these MUST start with a Capital Letter?",
+    "options": [
+      "city",
+      "village",
+      "mysore",
+      "town"
+    ],
+    "answer": 2,
+    "explanation": "Proper Noun Trap! City, Village, and Town are common nouns. 'Mysore' is a specific name , so it is a Proper Noun and needs a capital M."
+  },
+  {
+    "id": "C3H_TRICK_16_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which object requires the article 'The'?",
+    "options": [
+      "Star",
+      "Planet",
+      "Sun",
+      "Moon"
+    ],
+    "answer": 2,
+    "explanation": "The Uniqueness Rule! There are many stars and planets. But in our sky, there is only ONE Sun. Unique objects take 'The'."
+  },
+  {
+    "id": "C3H_TRICK_17_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which word looks Plural but is actually Singular?",
+    "options": [
+      "Cars",
+      "News",
+      "Boys",
+      "Pens"
+    ],
+    "answer": 1,
+    "explanation": "The False Plural! 'News' ends in S, but it is uncountable. You say 'The news IS interesting', never 'are'."
+  },
+  {
+    "id": "C3H_TRICK_18_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Identify the correct spelling of the class you go to:",
+    "options": [
+      "Tution",
+      "Tuition",
+      "Tutione",
+      "Tutian"
+    ],
+    "answer": 1,
+    "explanation": "The Silent 'I' Trap! It is pronounced 'Too-Shun', so people spell it Tution. But it is spelled Tu-I-tion."
+  },
+  {
+    "id": "C3H_TRICK_19_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which preposition shows ACTION/MOVEMENT?",
+    "options": [
+      "The frog is IN the well.",
+      "The frog jumped INTO the well.",
+      "The frog sat AT the well.",
+      "The frog is ON the well."
+    ],
+    "answer": 1,
+    "explanation": "The Movement Trap! 'In' is a position (static). 'Into' implies movement from outside to inside."
+  },
+ 
+  {
+    "id": "C3H_TRICK_21_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which word rhymes with 'Enough'?",
+    "options": [
+      "Plough",
+      "Dough",
+      "Rough",
+      "Through"
+    ],
+    "answer": 2,
+    "explanation": "The Sight Rhyme Trap! All words end in 'ough', but they sound different. Plough (ow), Dough (oh), Through (oo). Only Rough sounds like Enough (uff)."
+  },
+  
+  {
+    "id": "C3H_TRICK_23_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "A 'Bunch' is for Grapes. What is a 'Bunch' NOT used for?",
+    "options": [
+      "Keys",
+      "Bananas",
+      "Flowers",
+      "Wolves"
+    ],
+    "answer": 3,
+    "explanation": "Collective Noun Trap! We have a Bunch of Keys, Bananas, and Flowers. But Wolves come in a Pack!"
+  },
+{
+  "id": "C3H_TRICK_24_VICIOUS",
+  "difficulty": "hard",
+  "type": "text",
+  "question": "In which of these words is the 'L' fully pronounced?",
+  "options": [
+    "Chalk",
+    "Stalk",
+    "Yolk",
+    "Bulk"
+  ],
+  "answer": 3,
+  "explanation": "A Phonetic Trap! In 'Walk', 'Talk', 'Chalk', 'Stalk', and 'Yolk', the L is silent. But in 'Bulk', 'Milk', and 'Silk', the L must be pronounced!"
+},
+ {
+    "id": "C3H_TRICK_25_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Choose the correct Past Tense: 'He _____ a new car yesterday.'",
+    "options": [
+      "Brought",
+      "Bought",
+      "Buyed",
+      "Brang"
+    ],
+    "answer": 1,
+    "explanation": "The 'R' Trap! 'Brought' comes from BRing. 'Bought' comes from Buy. Students often mix these up because they sound similar."
+  },
+  {
+    "id": "C3H_TRICK_26_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "What is the Strict Logical Opposite of 'Always'?",
+    "options": [
+      "Sometimes",
+      "Rarely",
+      "Seldom",
+      "Never"
+    ],
+    "answer": 3,
+    "explanation": "A Logic Trap! In casual speech, 'Rarely' feels like an opposite. But mathematically: Always = 100%, Never = 0%. Everything else is just 'in between'."
+  },
+  {
+    "id": "C3H_TRICK_27_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which pronoun is technically correct when a baby's gender is unknown? 'The baby wants ___ bottle.'",
+    "options": [
+      "his",
+      "her",
+      "it's",
+      "its"
+    ],
+    "answer": 3,
+    "explanation": "Two Traps in One! 1) We use 'Its' (neutral) for babies/animals of unknown gender. 2) 'It's' (with apostrophe) means 'It is'. The possessive has NO apostrophe."
+  },
+  {
+    "id": "C3H_TRICK_28_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Identify the MAIN VERB in this sentence: 'Swimming is my favorite hobby.'",
+    "options": [
+      "Swimming",
+      "Is",
+      "Favorite",
+      "Hobby"
+    ],
+    "answer": 1,
+    "explanation": "The Gerund Trap! 'Swimming' looks like an action, but here it is a Gerund acting as the Subject (Noun). The actual verb linking them is 'IS'."
+  },
+  {
+    "id": "C3H_TRICK_29_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Which is the ONLY correct spelling?",
+    "options": [
+      "Grammer",
+      "Grammer",
+      "Grammar",
+      "Gramar"
+    ],
+    "answer": 2,
+    "explanation": "The 'E' Trap! Because we pronounce it 'Gram-er', 90% of people spell it with an 'E'. It is strictly A-R-A-R at the end."
+  },
+  {
+    "id": "C3H_TRICK_30_VICIOUS",
+    "difficulty": "hard",
+    "type": "text",
+    "question": "Grammar Check: 'The snake was killed ___ the man ___ a stone.'",
+    "options": [
+      "with / by",
+      "by / with",
+      "from / with",
+      "by / by"
+    ],
+    "answer": 1,
+    "explanation": "The Agent vs Instrument Rule! 1) The Doer (Agent) uses 'BY' (By the man). 2) The Tool (Instrument) uses 'WITH' (With a stone)."
+  },
+       {"id": "C3H_ENG_01",
+        "difficulty": "hard",
+        "type": "text",
+        "question": "Choose the correct Plural: 'I saw three ___ in the forest.'",
+        "options": ["Deers", "Deer", "Deeres", "Dears"],
+        "answer": 1,
+        "explanation": "The plural of 'Deer' is 'Deer' (No change)."
+      },
+      {
+        "id": "C3H_ENG_02",
+        "difficulty": "hard",
+        "type": "text",
+        "question": "Choose the correct Homophone: 'The knight rode a ___.'",
+        "options": ["Night", "Right", "Steed", "Hare"],
+        "answer": 2,
+        "explanation": "Trick question! A knight rides a 'Horse'. But if checking sound, 'Night' is the homophone."
+      },
+      {
+        "id": "C3H_ENG_03",
+        "difficulty": "hard",
+        "type": "text",
+        "question": "Past tense of 'Catch':",
+        "options": ["Catched", "Cot", "Caught", "Cought"],
+        "answer": 2,
+        "explanation": "Irregular verb: Catch -> Caught."
+      },
+      {
+        "id": "C3H_ENG_04",
+        "difficulty": "hard",
+        "type": "text",
+        "question": "Which word is an Adverb? 'The dog barked loudly.'",
+        "options": ["Dog", "Barked", "Loudly", "The"],
+        "answer": 2,
+        "explanation": "Loudly describes *how* the dog barked."
+      },
+      {
+        "id": "C3H_ENG_05",
+        "difficulty": "hard",
+        "type": "text",
+        "question": "Use the correct Article: 'He is ___ honest man.'",
+        "options": ["A", "An", "The", "No article"],
+        "answer": 1,
+        "explanation": "'Honest' starts with a silent 'H' (vowel sound 'O')."
+      },
+      {
+        "id": "C3H_ENG_06",
+        "difficulty": "hard",
+        "type": "text",
+        "question": "Choose the correct Conjunction: 'I was tired, ___ I went to sleep.'",
+        "options": ["But", "So", "Because", "Or"],
+        "answer": 1,
+        "explanation": "'So' shows a result."
+      }
+    ]
+  },
+  "classes_5_7": {
+    "easy": [
+      { "id": "C5E001", "difficulty": "easy", "type": "text", "question": "Find the ODD one out:", "options": ["Table", "Chair", "Sofa", "Apple"], "answer": 3 },
+      { "id": "C5E002", "difficulty": "easy", "type": "text", "question": "Correct spelling:", "options": ["Exampel", "Example", "Exampal", "Exampl"], "answer": 1 },
+      { "id": "C5E003", "difficulty": "easy", "type": "text", "question": "Choose the adjective:", "options": ["Quickly", "Beauty", "Tall", "Run"], "answer": 2 },
+      { "id": "C5E004", "difficulty": "easy", "type": "text", "question": "Find the ODD one out:", "options": ["Run", "Jump", "Sleep", "Blue"], "answer": 3 },
+      { "id": "C5E005", "difficulty": "easy", "type": "text", "question": "Choose the verb:", "options": ["Beautiful", "Quickly", "Run", "Blue"], "answer": 2 },
+      { "id": "C5E006", "difficulty": "easy", "type": "text", "question": "Correct spelling:", "options": ["Diffrent", "Different", "Diferent", "Diffarent"], "answer": 1 },
+      { "id": "C5E007", "difficulty": "easy", "type": "image", "question": "Which letter is missing? ENGB__ZZ", "options": ["A", "E", "U", "O"], "answer": 2, "media": "/img/questions/logo_engbuzz.jpg" },
+      { "id": "C5E008", "difficulty": "easy", "type": "image", "question": "Identify this teacher.", "options": ["Rishana Mam", "Hajara Mam", "Nazariya Mam", "Soumya Mam"], "answer": 0, "media": "/img/questions/teacher_rishana.jpg" },
+      { "id": "C5E009", "difficulty": "easy", "type": "text", "question": "Find the ODD one out:", "options": ["Teacher", "Doctor", "Pilot", "Pencil"], "answer": 3 },
+      { "id": "C5E010", "difficulty": "easy", "type": "text", "question": "She is fond ___ music.", "options": ["in", "on", "of", "with"], "answer": 2 },
+      { "id": "C5E013", "difficulty": "easy", "type": "image", "question": "Identify action:", "options": ["Speaking", "Reading", "Shouting", "Laughing"], "answer": 1, "media": "/img/questions/student_reading.jpg" },
+      { "id": "C5E014", "difficulty": "easy", "type": "image", "question": "Identify emotion:", "options": ["Shy", "Confident", "Careless", "Afraid"], "answer": 1, "media": "/img/questions/student_confident.jpg" },
+      { "id": "C5E015", "difficulty": "easy", "type": "image", "question": "Identify emotion:", "options": ["Nervous", "Confident", "Lazy", "Careless"], "answer": 1, "media": "/img/questions/student_stage.jpg" },
+      { "id": "C5E016", "difficulty": "easy", "type": "audio", "question": "What sound is this?", "options": ["Bell", "Whistle", "Horn", "Siren"], "answer": 0, "media": "/audio/questions/bell_ring.mp3" },
+      { "id": "C5E017", "difficulty": "easy", "type": "audio", "question": "Identify the instrument.", "options": ["Drum", "Piano", "Guitar", "Flute"], "answer": 1, "media": "/audio/questions/piano_note.mp3" },
+      { "id": "C5E026", "difficulty": "easy", "type": "image", "question": "Identify the sport.", "options": ["Tennis", "Cricket", "Football", "Hockey"], "answer": 1, "media": "/img/questions/cricket.jpg" },
+      { "id": "C5E027", "difficulty": "easy", "type": "image", "question": "Identify the flag.", "options": ["USA", "India", "UK", "China"], "answer": 1, "media": "/img/questions/india_flag.jpg" },
+      { "id": "C5E028", "difficulty": "easy", "type": "audio", "question": "Identify the vehicle.", "options": ["Train", "Car", "Bus", "Bike"], "answer": 0, "media": "/audio/questions/train_horn.mp3" },
+      { "id": "C5E036", "difficulty": "easy", "type": "image", "question": "Identify the monument.", "options": ["Taj Mahal", "Red Fort", "Qutub Minar", "India Gate"], "answer": 0, "media": "/img/questions/taj_mahal.jpg" },
+      { "id": "C5E037", "difficulty": "easy", "type": "image", "question": "Identify the leader.", "options": ["Gandhi", "Nehru", "Patel", "Bose"], "answer": 0, "media": "/img/questions/gandhi.jpg" },
+      { "id": "C5E038", "difficulty": "easy", "type": "audio", "question": "Identify the bird.", "options": ["Crow", "Peacock", "Parrot", "Sparrow"], "answer": 1, "media": "/audio/questions/peacock_call.mp3" },
+      { "id": "C5E039", "difficulty": "easy", "type": "text", "question": "Which is an adjective?", "options": ["Beautiful", "Sing", "Boy", "Run"], "answer": 0 },
+      { "id": "C5E040", "difficulty": "easy", "type": "text", "question": "Opposite of 'Fast':", "options": ["Slow", "Quick", "Rapid", "Speedy"], "answer": 0 },
+      { "id": "C5E041", "difficulty": "easy", "type": "text", "question": "Past tense of 'Go':", "options": ["Went", "Gone", "Goed", "Going"], "answer": 0 },
+      { "id": "C5E042", "difficulty": "easy", "type": "image", "question": "Identify this eminent person.", "options": ["Minhaj Sir", "Shafi Sir", "Shameem Sir", "Usman Sir"], "answer": 2, "media": "/img/questions/shami.jpg" },
+      { "id": "C5E043", "difficulty": "easy", "type": "text", "question": "Correct article: ___ apple.", "options": ["A", "An", "The", "No article"], "answer": 1 },
+      { "id": "C5E044", "difficulty": "easy", "type": "text", "question": "Find the ODD one out:", "options": ["Car", "Bus", "Train", "Table"], "answer": 3 },
+      { "id": "C5E045", "difficulty": "easy", "type": "text", "question": "Synonym for 'Small':", "options": ["Big", "Tiny", "Large", "Huge"], "answer": 1 },
+      { "id": "C5E046", "difficulty": "easy", "type": "text", "question": "Which is a pronoun?", "options": ["He", "Run", "Blue", "Cat"], "answer": 0 },
+      { "id": "C5E047", "difficulty": "easy", "type": "text", "question": "Correct spelling:", "options": ["Freind", "Friend", "Frind", "Frend"], "answer": 1 },
+      { "id": "C5E048", "difficulty": "easy", "type": "text", "question": "Opposite of 'Hot':", "options": ["Cold", "Warm", "Boiling", "Fire"], "answer": 0 },
+      { "id": "C5E049", "difficulty": "easy", "type": "text", "question": "Past tense of 'Eat':", "options": ["Eated", "Ate", "Eaten", "Eating"], "answer": 1 },
+      { "id": "C5E050", "difficulty": "easy", "type": "text", "question": "Plural of 'City':", "options": ["Citys", "Cities", "Cityes", "Cytes"], "answer": 1 },
+      { "id": "C5E051", "difficulty": "easy", "type": "text", "question": "He is good ___ English.", "options": ["in", "at", "on", "with"], "answer": 1 },
+      { "id": "C5E052", "difficulty": "easy", "type": "text", "question": "He is afraid ___ dogs.", "options": ["from", "of", "with", "by"], "answer": 1 },
+      { "id": "C5E053", "difficulty": "easy", "type": "text", "question": "Correct spelling:", "options": ["Recieve", "Receive", "Receve", "Recive"], "answer": 1 },
+      { "id": "C5E054", "difficulty": "easy", "type": "text", "question": "Which is a metal?", "options": ["Gold", "Wood", "Plastic", "Glass"], "answer": 0 },
+      { "id": "C5E055", "difficulty": "easy", "type": "text", "question": "Group of fish:", "options": ["School", "Herd", "Pack", "Flock"], "answer": 0 },
+      { "id": "C5E056", "difficulty": "easy", "type": "text", "question": "Opposite of 'Buy':", "options": ["Sell", "Get", "Take", "Hold"], "answer": 0 },
+      { "id": "C5E057", "difficulty": "easy", "type": "text", "question": "Past tense of 'See':", "options": ["Saw", "Seen", "Seed", "Seeing"], "answer": 0 },
+      { "id": "C5E058", "difficulty": "easy", "type": "text", "question": "Choose the adverb:", "options": ["Slow", "Slowly", "Slower", "Fastest"], "answer": 1 },
+      { "id": "C5E059", "difficulty": "easy", "type": "text", "question": "Synonym for 'Start':", "options": ["End", "Begin", "Finish", "Stop"], "answer": 1 },
+      { "id": "C5E060", "difficulty": "easy", "type": "text", "question": "Correct spelling:", "options": ["Belive", "Believe", "Beleive", "Bilieve"], "answer": 1 }
+ ],
+    "hard": [{
+  "id": "C8H_REV_IMG_07",
+  "difficulty": "hard",
+  "type": "image",
+  "question": "Which statement best interprets the proverb: 'Where there's a will, there's a way'?",
+  "options": [
+    "A legal testament always provides financial direction.",
+    "Future events are certain to happen eventually.",
+    "Sheer determination can overcome any obstacle.",
+    "Willful people often lose their path."
+  ],
+  "answer": 2,
+  "media": "/img/questions/will_way.jpg",
+  "explanation": "A Semantic Trap! 1) This is not about a legal 'Last Will and Testament'. 2) It is not about the grammatical future tense (I will). 3) It refers to the abstract noun 'Will' (Resolve/Determination). Context is everything!"
+},
+      {
+  "id": "C3H_REV2_IMG_08",
+  "difficulty": "hard",
+  "type": "image",
+  "question": "What does the proverb \"No man is an island\" mean?",
+  "options": [
+    "People should live on islands",
+    "A man should live completely alone",
+    "Humans are independent and need no one",
+    "People need others for support and cannot live entirely alone"
+  ],
+  "answer": 3,
+  "media": "/img/questions/no_man_island.jpg",
+  "explanation": "The proverb means that human beings depend on one another and cannot live in isolation."
+},
+{
+  "id": "C3H_IMG_0788",
+  "difficulty": "hard",
+  "type": "image",
+  "question": "Identify the correct spelling:(CONFUSING!)",
+  "options": [
+    "throughout",
+    "thoughout",
+    "througout",
+    "thruout"
+  ],
+  "answer": 0,
+  "media": "/img/questions/throughout.jpg",
+  "explanation": "“Throughout” is the correct spelling; the other options are incorrect."
+},
+{ "id": "C8H_AUD6_09", "difficulty": "hard", "type": "audio", "question": "Which genre involves magic and dragons?", "options": ["Sci-Fi", "Fantasy", "Non-fiction", "Biography"], "answer": 1, "media": "/audio/questions/toothless.m4a" },
+
+      { "id": "C3H_IMG_07", "difficulty": "hard", "type": "image", "question": "Which is the correct spelling? ", "options": ["Handkerchief", "Handkarchief", "Handkarcheef", "Handkercheef"], "answer": 1, "media": "/img/questions/Handkerchief.jpg" },
+      { "id": "C3H_IMG_08", "difficulty": "hard", "type": "image", "question": "The cat is hiding ___ the box.", "options": ["Inside", "In", "at", "In It In"], "answer": 0, "media": "/img/questions/cat_in_box.jpg" },
+      { "id": "C3H_IMG_09", "difficulty": "hard", "type": "image", "question": "Identify the picture shown.", "options": ["Bloom", "Chill", "Drizzle", "Fall"], "answer": 2, "media": "/img/questions/season_rain.jpg" },
+      { "id": "C3H_IMG_10", "difficulty": "hard", "type": "image", "question": "Which word describes this face?", "options": ["Angry", "Courage", "Happy", "Sad"], "answer": 1, "media": "/img/questions/courage.jpg" },
+      { "id": "C3H_IMG_11", "difficulty": "hard", "type": "image", "question": "What is the opposite of this?", "options": ["Close", "Shut", "Locked", "Big"], "answer": 0, "media": "/img/questions/door_open.jpg" },
+      { "id": "C3H_IMG_12", "difficulty": "hard", "type": "image", "question": "Identify the situation.", "options": ["Cheating", "Helping", "Robbing", "Standing"], "answer": 1, "media": "/img/questions/help.jpg" },
+      { "id": "C3H_IMG_13", "difficulty": "hard", "type": "image", "question": "Which object rhymes with 'Bat'?", "options": ["Bart", "Gnat", "Cart", "Dart"], "answer": 1, "media": "/img/questions/bat.jpg" },
+
+      { "id": "C3H_AUD_01", "difficulty": "hard", "type": "audio", "question": "Which word rhymes with the sound?", "options": ["Waiter", "Alligator", "Fighter", "Tighter"], "answer": 0, "media": "/audio/questions/mater.mp3" },
+      { "id": "C3H_AUD_02", "difficulty": "hard", "type": "audio", "question": "How many syllables in 'Banana'?", "options": ["1", "2", "3", "4"], "answer": 2, "media": "/audio/questions/word_banana.mp3" },
+      { "id": "C3H_AUD_03", "difficulty": "hard", "type": "audio", "question": "Is this a question or a statement?", "options": ["Statement", "Question", "Command", "None"], "answer": 1, "media": "/audio/questions/intonation_question.mp3" },
+      { "id": "C3H_AUD_04", "difficulty": "hard", "type": "audio", "question": "Identify the word.", "options": ["Croissant", "Courant", "Crescent", "Cross On"], "answer": 0, "media": "/audio/questions/Croissant.mp3" },
+      { "id": "C3H_AUD_05", "difficulty": "hard", "type": "audio", "question": "Which vowel sound do you hear?", "options": ["Short A", "Long A", "Short E", "Long O"], "answer": 0, "media": "/audio/questions/sound_cat.mp3" },
+      { "id": "C3H_AUD_08", "difficulty": "hard", "type": "audio", "question": "Which word starts with 'Ch'?", "options": ["Ship", "Chip", "Sip", "Tip"], "answer": 1, "media": "/audio/questions/word_chip.mp3" },
+      { "id": "C3H_AUD_12", "difficulty": "hard", "type": "audio", "question": "What sound does a chicken make?", "options": ["Kokerako", "CooCodoKoo", "CockaDoodledoo", "Kookrrko"], "answer": 2, "media": "/audio/questions/chicken.mp3" },
+      {
+        "id": "C5H_ENG_01",
+        "difficulty": "hard",
+        "type": "text",
+        "question": "Identify the Tense: 'She has been reading for two hours.'",
+        "options": ["Present Continuous", "Present Perfect", "Present Perfect Continuous", "Past Perfect"],
+        "answer": 2,
+        "explanation": "Has/Have + Been + V-ing = Present Perfect Continuous."
+      },
+      { "id": "C3H1_TIME2", "difficulty": "hard", "type": "image", "question": "What time is shown?", "options": ["4 o'clock", "Quarter past four", "Half past four", "Quarter to five"], "answer": 1, "media": "/img/questions/clock_415.jpg", "explanation": "The minute hand is on 3." },
+      { "id": "C3H1_TIME3", "difficulty": "hard", "type": "image", "question": "What time is shown?", "options": ["10 o'clock", "Quarter past ten", "Quarter to eleven", "Three Fourth of Ten"], "answer": 2, "media": "/img/questions/clock_1045.jpg", "explanation": "The minute hand is on 9." },
+
+      { "id": "C3H1_TIME7", "difficulty": "hard", "type": "image", "question": "What time is shown?", "options": ["8 o'clock", "Quarter to nine", "Quarter past eight", "Half past eight"], "answer": 1, "media": "/img/questions/clock_845.jpg", "explanation": "Minute hand is on 9." },
+      { "id": "C5H_ODD1", "difficulty": "hard", "type": "text", "question": "Find the ODD one out", "options": ["Quickly", "Happily", "Sadly", "Run"], "answer": 3, "explanation": "Run is a verb; others are adverbs." },
+     { "id": "C5H_TRICK_01", "difficulty": "hard", "type": "text", "question": "One of my ___ is missing.", "options": ["lens", "friends", "book", "pen"], "answer": 1, "explanation": "One of MANY. It must be followed by a plural (Friends)." },
+  { "id": "C5H_TRICK_02", "difficulty": "hard", "type": "text", "question": "He is good ___ English.", "options": ["in", "at", "on", "with"], "answer": 1, "explanation": "You are good AT a skill, not in it." },
+  { "id": "C5H_TRICK_03", "difficulty": "hard", "type": "text", "question": "I prefer coffee ___ tea.", "options": ["than", "over", "to", "from"], "answer": 2, "explanation": "'Prefer' is always followed by 'to', never 'than'." },
+  { "id": "C5H_TRICK_04", "difficulty": "hard", "type": "text", "question": "She is married ___ a doctor.", "options": ["with", "to", "by", "for"], "answer": 1, "explanation": "You get married TO someone. 'Married with' is a common mistake." },
+  { "id": "C5H_TRICK_05", "difficulty": "hard", "type": "text", "question": "Bread and Butter ___ my favorite breakfast.", "options": ["are", "is", "were", "have"], "answer": 1, "explanation": "Bread and Butter is considered one single dish, so the verb is singular (Is)." },
+  { "id": "C5H_TRICK_06", "difficulty": "hard", "type": "text", "question": "I look forward to ___ you.", "options": ["meet", "meeting", "met", "meets"], "answer": 1, "explanation": "The phrase 'look forward to' is followed by a Gerund (-ing form)." },
+  { "id": "C5H_TRICK_07", "difficulty": "hard", "type": "text", "question": "Return ___ the book.", "options": ["back", "all", "to me", "<No Word>"], "answer": 3, "explanation": "'Return' already means 'give back'. saying 'Return back' is wrong." },
+  { "id": "C5H_TRICK_08", "difficulty": "hard", "type": "text", "question": "Correct the sentence: 'She has white hairs.'", "options": ["She has white hair.", "She have white hairs.", "She has grey hairs.", "No correction."], "answer": 0, "explanation": "Hair is uncountable when referring to the whole head. Also, we say 'Grey' for age, not white." },
+  { "id": "C5H_TRICK_09", "difficulty": "hard", "type": "text", "question": "The police ___ coming.", "options": ["is", "are", "was", "has"], "answer": 1, "explanation": "'Police' is a plural noun. It always takes 'Are'." },
+  { "id": "C5H_TRICK_10", "difficulty": "hard", "type": "text", "question": "Which word is misspelled?", "options": ["Receive", "Believe", "Achieve", "Decieve"], "answer": 3, "explanation": "It should be 'Deceive' (E before I after C)." },
+  { "id": "C5H_TRICK_11", "difficulty": "hard", "type": "text", "question": "The scenery of Kashmir ___ beautiful.", "options": ["are", "is", "were", "have"], "answer": 1, "explanation": "Scenery is singular and uncountable. It takes 'Is'." },
+  { "id": "C5H_TRICK_12", "difficulty": "hard", "type": "text", "question": "My elder brother is taller ___ me.", "options": ["then", "to", "than", "from"], "answer": 2, "explanation": "Taller (Comparative) uses 'than'. (Don't confuse with 'Senior to')." },
+  { "id": "C5H_TRICK_13", "difficulty": "hard", "type": "text", "question": "Identify the Tense: 'I have been waiting.'", "options": ["Present Perfect", "Present Continuous", "Present Perfect Continuous", "Past Perfect"], "answer": 2, "explanation": "Have + Been + Ing = Present Perfect Continuous." },
+  { "id": "C5H_TRICK_14", "difficulty": "hard", "type": "text", "question": "It has been raining ___ morning.", "options": ["from", "since", "for", "by"], "answer": 1, "explanation": "Use 'Since' for a starting point (Morning). Use 'For' for duration (2 hours)." },
+  { "id": "C5H_TRICK_15", "difficulty": "hard", "type": "text", "question": "Correct spelling:", "options": ["Vacuum", "Vaccum", "Vacum", "Vaccuum"], "answer": 0, "explanation": "V-A-C-U-U-M (One C, Two U's). Very tricky!" },
+  { "id": "C5H_TRICK_16", "difficulty": "hard", "type": "text", "question": "Neither of the boys ___ present.", "options": ["were", "are", "is", "have"], "answer": 2, "explanation": "'Neither' treats them one by one, so it is Singular (Is)." },
+  { "id": "C5H_TRICK_17", "difficulty": "hard", "type": "text", "question": "She is angry ___ her brother.", "options": ["on", "at", "with", "by"], "answer": 2, "explanation": "You are angry WITH a person, but angry AT a situation." },
+  { "id": "C5H_TRICK_18", "difficulty": "hard", "type": "text", "question": "I saw ___ one-eyed man.", "options": ["a", "an", "the", "no article"], "answer": 0, "explanation": "'One' starts with 'Wa' sound. Use 'A'." },
+  { "id": "C5H_TRICK_19", "difficulty": "hard", "type": "text", "question": "He died ___ cancer.", "options": ["from", "by", "of", "with"], "answer": 2, "explanation": "Died OF a disease. Died FROM an accident/cause." },
+  { "id": "C5H_TRICK_20", "difficulty": "hard", "type": "text", "question": "Choose the correct tag: 'She sings well, ___?'", "options": ["isn't she?", "doesn't she?", "don't she?", "didn't she?"], "answer": 1, "explanation": "Sings (Present Simple) uses 'Does'. Positive sentence -> Negative tag." },
+  { "id": "C5H_TRICK_21", "difficulty": "hard", "type": "text", "question": "The jury ___ divided in their opinion.", "options": ["was", "were", "is", "has"], "answer": 1, "explanation": "When the jury disagrees, they act as individuals (Plural/Were)." },
+  { "id": "C5H_TRICK_22", "difficulty": "hard", "type": "text", "question": "He sat ___ the shade of the tree.", "options": ["under", "in", "below", "on"], "answer": 1, "explanation": "You sit UNDER the tree, but IN the shade." },
+  { "id": "C5H_TRICK_23", "difficulty": "hard", "type": "text", "question": "Make it Negative: 'He runs fast.'", "options": ["He not runs fast.", "He does not runs fast.", "He does not run fast.", "He do not run fast."], "answer": 2, "explanation": "With 'Does not', use the base verb 'Run' (Drop the 's')." },
+  { "id": "C5H_TRICK_24", "difficulty": "hard", "type": "text", "question": "Comparative of 'Top':", "options": ["Topper", "More Top", "Topmost", "None"], "answer": 3, "explanation": "Top is an absolute position. It has no comparative degree!" },
+  { "id": "C5H_TRICK_25", "difficulty": "hard", "type": "text", "question": "She is ___ M.L.A.", "options": ["a", "an", "the", "no article"], "answer": 1, "explanation": "M.L.A is pronounced 'Em-El-A'. Starts with 'E' sound -> An." },
+  { "id": "C5H_TRICK_26", "difficulty": "hard", "type": "text", "question": "Meaning of 'Break the ice':", "options": ["Break a block of ice", "Start a conversation", "Fight", "Make a drink"], "answer": 1, "explanation": "It means to overcome initial shyness." },
+  { "id": "C5H_TRICK_27", "difficulty": "hard", "type": "text", "question": "Synonym of 'Abundant':", "options": ["Rare", "Plentiful", "Small", "Empty"], "answer": 1, "explanation": "Abundant means having plenty of something." },
+  { "id": "C5H_TRICK_28", "difficulty": "hard", "type": "text", "question": "Prefix for 'Respect':", "options": ["Unrespect", "Imrespect", "Disrespect", "Inrespect"], "answer": 2, "explanation": "Disrespect." },
+  { "id": "C5H_TRICK_29", "difficulty": "hard", "type": "text", "question": "The Cattle ___ grazing.", "options": ["is", "are", "was", "has"], "answer": 1, "explanation": "Cattle looks singular but is always Plural. 'Are'." },
+  { "id": "C5H_TRICK_30", "difficulty": "hard", "type": "text", "question": "Homophone: 'The ___ is over, go buy it.'", "options": ["Flower", "Flour", "Floor", "Flore"], "answer": 1, "explanation": "Flour is used for baking." } ]
+  },
+  "classes_8_10": {
+    "easy": [
+      { "id": "C8E001", "difficulty": "easy", "type": "image", "question": "Identify this famous English playwright.", "options": ["Charles Dickens", "William Shakespeare", "Mark Twain", "JK Rowling"], "answer": 1, "media": "/img/questions/shakespeare.jpg" },
+      { "id": "C8E002", "difficulty": "easy", "type": "image", "question": "Which punctuation mark is shown?", "options": ["Comma", "Semicolon", "Colon", "Hyphen"], "answer": 1, "media": "/img/questions/semicolon.jpg" },
+      { "id": "C8E003", "difficulty": "easy", "type": "image", "question": "Identify the proper noun visually.", "options": ["Tower", "Building", "Eiffel Tower", "Steel"], "answer": 2, "media": "/img/questions/eiffel_tower.jpg" },
+      { "id": "C8E004", "difficulty": "easy", "type": "image", "question": "What does this sign represent grammatically?", "options": ["Request", "Command", "Question", "Statement"], "answer": 1, "media": "/img/questions/stop_sign.jpg" },
+      { "id": "C8E005", "difficulty": "easy", "type": "image", "question": "Which idiom fits the image? (Raining...)", "options": ["Cats and Dogs", "Birds and Bees", "Fish and Chips", "Apples and Oranges"], "answer": 0, "media": "/img/questions/rain_cats_dogs.jpg" },
+      { "id": "C8E006", "difficulty": "easy", "type": "image", "question": "Identify the sport shown.", "options": ["Hockey", "Badminton", "Tennis", "Cricket"], "answer": 1, "media": "/img/questions/badminton.jpg" },
+      { "id": "C8E007", "difficulty": "easy", "type": "image", "question": "Which preposition fits? The plane is ___ the clouds.", "options": ["on", "under", "above", "between"], "answer": 2, "media": "/img/questions/plane_clouds.jpg" },
+      { "id": "C8E008", "difficulty": "easy", "type": "audio", "question": "Which letter is silent in this word?", "options": ["H", "O", "N", "S"], "answer": 0, "media": "/audio/questions/word_honest.mp3" },
+      { "id": "C8E009", "difficulty": "easy", "type": "audio", "question": "Identify the type of sentence.", "options": ["Statement", "Question", "Exclamation", "Command"], "answer": 2, "media": "/audio/questions/sentence_wow.mp3" },
+      { "id": "C8E010", "difficulty": "easy", "type": "audio", "question": "Which word did you hear?", "options": ["quotient ", "question", "continent", "quadrant"], "answer": 0, "media": "/audio/questions/word_quotient.mp3" },
+      { "id": "C8E011", "difficulty": "easy", "type": "audio", "question": "Identify the emotion in the voice.", "options": ["Happy", "Angry", "Sad", "Bored"], "answer": 1, "media": "/audio/questions/voice_angry.mp3" },
+      { "id": "C8E012", "difficulty": "easy", "type": "text", "question": "Synonym of 'Begin':", "options": ["End", "Start", "Close", "Stop"], "answer": 1 },
+      { "id": "C8E013", "difficulty": "easy", "type": "text", "question": "Correct spelling:", "options": ["Independant", "Independent", "Independnt", "Indepandent"], "answer": 1 },
+      { "id": "C8E014", "difficulty": "easy", "type": "text", "question": "Article: ___ one-eyed man", "options": ["a", "an", "the", "no article"], "answer": 0 },
+      { "id": "C8E015", "difficulty": "easy", "type": "text", "question": "Antonym of 'Transparent':", "options": ["Clear", "Visible", "Opaque", "Bright"], "answer": 2 },
+      { "id": "C8E016", "difficulty": "easy", "type": "image", "question": "Identify this eminent person.", "options": ["Minhaj Sir", "Shafi Sir", "Shameem Sir", "Usman Sir"], "answer": 2, "media": "/img/questions/shami.jpg" },
+      { "id": "C8E017", "difficulty": "easy", "type": "text", "question": "Synonym of 'Quick':", "options": ["Slow", "Fast", "Weak", "Lazy"], "answer": 1 },
+      { "id": "C8E018", "difficulty": "easy", "type": "text", "question": "Correct spelling:", "options": ["Enviroment", "Environment", "Envirnment", "Enviornment"], "answer": 1 },
+      { "id": "C8E019", "difficulty": "easy", "type": "text", "question": "Article: ___ European country", "options": ["a", "an", "the", "no article"], "answer": 0 },
+      { "id": "C8E020", "difficulty": "easy", "type": "text", "question": "Antonym of 'Reluctant':", "options": ["Unwilling", "Eager", "Afraid", "Lazy"], "answer": 1 },
+      { "id": "C8E021", "difficulty": "easy", "type": "text", "question": "Meaning of 'Ambiguous':", "options": ["Clear", "Confusing", "Dangerous", "Funny"], "answer": 1 },
+      { "id": "C8E022", "difficulty": "easy", "type": "text", "question": "Choose correct sentence:", "options": ["She don't like tea", "She doesn't like tea", "She doesn't likes tea", "She don't likes tea"], "answer": 1 },
+      { "id": "C8E023", "difficulty": "easy", "type": "text", "question": "Which is NOT an action word?", "options": ["Run", "Jump", "Play", "Table"], "answer": 3 },
+      { "id": "C8E024", "difficulty": "easy", "type": "text", "question": "Correct plural:", "options": ["Childs", "Children", "Childes", "Child"], "answer": 1 },
+      { "id": "C8E026", "difficulty": "easy", "type": "text", "question": "Fill: He ___ playing football.", "options": ["is", "are", "am", "be"], "answer": 0 },
+      { "id": "C8E027", "difficulty": "easy", "type": "image", "question": "Which letter is missing? ENGB__ZZ", "options": ["A", "E", "U", "O"], "answer": 2, "media": "/img/questions/logo_engbuzz.jpg" },
+      { "id": "C8E028", "difficulty": "easy", "type": "image", "question": "Identify this teacher.", "options": ["Rishana Mam", "Hajara Mam", "Nazariya Mam", "Soumya Mam"], "answer": 0, "media": "/img/questions/teacher_rishana.jpg" },
+      { "id": "C8E029", "difficulty": "easy", "type": "text", "question": "Correct spelling:", "options": ["Beautiful", "Beutiful", "Beatiful", "Beautifull"], "answer": 0 },
+      { "id": "C8E030", "difficulty": "easy", "type": "text", "question": "Antonym of 'Hard':", "options": ["Soft", "Rock", "Stone", "Tough"], "answer": 0 },
+      { "id": "C8E031", "difficulty": "easy", "type": "text", "question": "Meaning of 'Ancient':", "options": ["Old", "Older", "Fresh", "Young"], "answer": 1 },
+      { "id": "C8E032", "difficulty": "easy", "type": "text", "question": "Choose correct sentence:", "options": ["He go to school.", "He goes to school.", "He going to school.", "He gone to school."], "answer": 1 },
+      { "id": "C8E033", "difficulty": "easy", "type": "text", "question": "Plural of 'Mouse':", "options": ["Mouses", "Mice", "Mouse", "Mices"], "answer": 1 },
+      { "id": "C8E034", "difficulty": "easy", "type": "text", "question": "Which is a noun?", "options": ["Run", "Blue", "Table", "Quickly"], "answer": 2 },
+      { "id": "C8E035", "difficulty": "easy", "type": "text", "question": "Past tense of 'Bring':", "options": ["Bringed", "Brang", "Brought", "Bringing"], "answer": 2 },
+      { "id": "C8E036", "difficulty": "easy", "type": "text", "question": "Opposite of 'Strong':", "options": ["Weak", "Hard", "Heavy", "Big"], "answer": 0 },
+      { "id": "C8E037", "difficulty": "easy", "type": "text", "question": "Correct spelling:", "options": ["Neccessary", "Necessary", "Necesary", "Neccesary"], "answer": 1 },
+      { "id": "C8E038", "difficulty": "easy", "type": "text", "question": "Which is a verb?", "options": ["Book", "Jump", "Blue", "Chair"], "answer": 1 },
+      { "id": "C8E039", "difficulty": "easy", "type": "text", "question": "Article: ___ apple.", "options": ["A", "An", "The", "No article"], "answer": 1 },
+      { "id": "C8E040", "difficulty": "easy", "type": "text", "question": "Synonym of 'Fast':", "options": ["Slow", "Quick", "Lazy", "Late"], "answer": 1 },
+      { "id": "C8E041", "difficulty": "easy", "type": "text", "question": "Correct sentence:", "options": ["They is playing.", "They are playing.", "Those are playing.", "Those be playing."], "answer": 1 }
+    ],
+    "hard": [
+      { "id": "C8H_TRICK_01", "difficulty": "hard", "type": "text", "question": "It is I who ___ to blame.", "options": ["am", "is", "are", "were"], "answer": 0, "explanation": "The verb agrees with 'I', so it is 'Am'. (It is I who am...)." },
+  { "id": "C8H_TRICK_02", "difficulty": "hard", "type": "text", "question": "If I ___ a bird, I would fly.", "options": ["was", "am", "were", "had"], "answer": 2, "explanation": "In hypothetical situations (Subjunctive mood), we always use 'Were' for all subjects." },
+  { "id": "C8H_TRICK_03", "difficulty": "hard", "type": "text", "question": "Let us go for a walk, ___?", "options": ["will we?", "shall we?", "do we?", "should we?"], "answer": 1, "explanation": "Suggestions starting with 'Let us' always take 'Shall we?'." },
+ {
+  "id": "C8H_TRICK_04_VICIOUS",
+  "difficulty": "hard",
+  "type": "text",
+  "question": "Choose the correct preposition: 'Though he is young, his rank is senior ____ mine.'",
+  "options": [
+    "than",
+    "over",
+    "above",
+    "to"
+  ],
+  "answer": 3,
+  "explanation": "A Logical Trap! 1) 'Than' is the common error. 2) 'Over' and 'Above' sound logical because rank is hierarchical (up/down). BUT, grammatical rules ignore logic. Latin adjectives (Senior/Junior) strictly take 'TO'."
+},
+  { "id": "C8H_TRICK_05", "difficulty": "hard", "type": "text", "question": "Passive Voice: 'Who taught you?'", "options": ["By whom you were taught?", "By whom were you taught?", "Who was taught you?", "By who were you taught?"], "answer": 1, "explanation": "The auxiliary verb 'were' must come before the subject 'you' in a question." },
+  { "id": "C8H_TRICK_06", "difficulty": "hard", "type": "text", "question": "Indirect Speech: He said, 'I saw him yesterday.'", "options": ["He said that he saw him yesterday.", "He said that he had seen him the previous day.", "He said he seen him yesterday.", "He said he saw him the previous day."], "answer": 1, "explanation": "Past Simple changes to Past Perfect (Had seen). Yesterday changes to Previous Day." },
+  { "id": "C8H_TRICK_07", "difficulty": "hard", "type": "text", "question": "No sooner did I arrive ___ the train left.", "options": ["when", "then", "than", "before"], "answer": 2, "explanation": "'No sooner' is always followed by 'Than'." },
+  { "id": "C8H_TRICK_08", "difficulty": "hard", "type": "text", "question": "We discussed ___ the matter.", "options": ["about", "of", "on", "all"], "answer": 3, "explanation": "'Discuss' means 'talk about'. Adding 'about' is redundant and wrong." },
+  { "id": "C8H_TRICK_09", "difficulty": "hard", "type": "text", "question": "The Hen has ___ an egg.", "options": ["lain", "layed", "laid", "lied"], "answer": 2, "explanation": "Lay (to produce egg) -> Laid. Lie (to rest) -> Lain." },
+  { "id": "C8H_TRICK_10", "difficulty": "hard", "type": "text", "question": "He ___ in this house since 2010.", "options": ["lived", "is living", "has been living", "was living"], "answer": 2, "explanation": "'Since' indicates an action started in past and continuing now (Perfect Continuous)." },
+  { "id": "C8H_TRICK_11", "difficulty": "hard", "type": "text", "question": "The English fought ___ the French.", "options": ["against", "with", "from", "to"], "answer": 0, "explanation": "'The English' refers to the people. You fight 'against' an enemy." },
+  { "id": "C8H_TRICK_12", "difficulty": "hard", "type": "text", "question": "Choose the Correct Sentence:", "options": ["He gave me an advice.", "He gave me some advices.", "He gave me a piece of advice.", "He gave me many advices."], "answer": 2, "explanation": "Advice is uncountable. You cannot say 'an advice' or 'advices'." },
+  { "id": "C8H_TRICK_13", "difficulty": "hard", "type": "text", "question": "Past tense of 'Hang' as in 'Hanging my dress':", "options": ["Hung", "Hanged", "Hang", "Hangen"], "answer": 1, "explanation": "Clothes are 'Hung'. People are 'Hanged'." },
+  { "id": "C8H_TRICK_14", "difficulty": "hard", "type": "text", "question": "Unless you ___ hard, you will fail.", "options": ["do not work", "work", "will not work", "did not work"], "answer": 1, "explanation": "'Unless' is already negative. Never use 'not' immediately after unless." },
+  { "id": "C8H_TRICK_15", "difficulty": "hard", "type": "text", "question": "Identify the Clause: 'I know *why he came*.'", "options": ["Adverb Clause", "Adjective Clause", "Noun Clause", "Principal Clause"], "answer": 2, "explanation": "It answers 'Know what?'. It functions as the Object." },
+  { "id": "C8H_TRICK_16", "difficulty": "hard", "type": "text", "question": "Passive Voice: 'Rose smells sweet.'", "options": ["Rose is smelt sweet.", "Rose is sweet when smelt.", "Sweet is the rose smell.", "Rose was sweet when smelt."], "answer": 1, "explanation": "This is a quasi-passive verb. Standard transformation is 'Subject + is + Adj + when V3'." },
+  { "id": "C8H_TRICK_17", "difficulty": "hard", "type": "text", "question": "Correct spelling:", "options": ["Lieutenant", "Leutenant", "Leftenant", "Lieutenent"], "answer": 0, "explanation": "L-I-E-U-T-E-N-A-N-T." },
+  { "id": "C8H_TRICK_18", "difficulty": "hard", "type": "text", "question": "The Principal and Secretary ___ coming.", "options": ["are", "is", "have", "were"], "answer": 1, "explanation": "Only one 'The' means one person holding two posts. So Singular (Is)." },
+  { "id": "C8H_TRICK_19", "difficulty": "hard", "type": "text", "question": "He has a taste ___ music.", "options": ["of", "in", "for", "at"], "answer": 2, "explanation": "You have a taste FOR something (liking)." },
+  { "id": "C8H_TRICK_20", "difficulty": "hard", "type": "text", "question": "Neither of the accusations ___ true.", "options": ["are", "were", "is", "have been"], "answer": 2, "explanation": "Neither is Singular." },
+  { "id": "C8H_TRICK_21", "difficulty": "hard", "type": "text", "question": "Question Tag: 'I am right, ___?'", "options": ["amn't I?", "aren't I?", "am I?", "isn't I?"], "answer": 1, "explanation": "There is no 'amn't'. The tag for 'I am' is 'aren't I'." },
+  { "id": "C8H_TRICK_22", "difficulty": "hard", "type": "text", "question": "She prevents me ___ going there.", "options": ["to", "from", "of", "for"], "answer": 1, "explanation": "Prevent takes 'From' + Gerund." },
+  { "id": "C8H_TRICK_23", "difficulty": "hard", "type": "text", "question": "Lest you ___ fail.", "options": ["should", "would", "might", "can"], "answer": 0, "explanation": "'Lest' is always followed by 'Should'." },
+  { "id": "C8H_TRICK_24", "difficulty": "hard", "type": "text", "question": "One word for 'Murder of a King':", "options": ["Homicide", "Regicide", "Suicide", "Patricide"], "answer": 1, "explanation": "Regi (King) + Cide (Killing)." },
+  { "id": "C8H_TRICK_25", "difficulty": "hard", "type": "text", "question": "Make Simple: 'He is rich but he is miserly.'", "options": ["Though he is rich...", "In spite of being rich...", "He is rich and miserly", "Rich he is but miserly"], "answer": 1, "explanation": "'In spite of' turns it into a phrase, making it a Simple sentence." },
+  { "id": "C8H_TRICK_26", "difficulty": "hard", "type": "text", "question": "Identify the error: 'I, You and He went.'", "options": ["I, You and He", "went", "He", "No error"], "answer": 0, "explanation": "The order of pronouns for good acts is 2-3-1: 'You, He and I went'." },
+  { "id": "C8H_TRICK_27", "difficulty": "hard", "type": "text", "question": "Physics ___ a difficult subject.", "options": ["are", "were", "is", "have"], "answer": 2, "explanation": "Physics ends in 's' but is Singular." },
+ {
+  "id": "C8H_TRICK_28_CUNNING",
+  "difficulty": "hard",
+  "type": "text",
+  "question": "Which verb correctly completes this formal sentence? 'The Chairman _____ a speech regarding the merger.'",
+  "options": [
+    "Conducted",
+    "Presented",
+    "Held",
+    "Made"
+  ],
+  "answer": 3,
+  "explanation": "A Vicious Trap! We 'Conduct' meetings, 'Present' reports, and 'Hold' talks. But for a speech, the only correct verb here is 'Make' (or Give/Deliver). Don't be tricked by the fancier words!"
+},
+  { "id": "C8H_TRICK_29", "difficulty": "hard", "type": "text", "question": "Antonym of 'Voluntary':", "options": ["Free", "Compulsory", "Willing", "Optional"], "answer": 1, "explanation": "Voluntary means by choice; Compulsory means forced." },
+  { "id": "C8H_TRICK_30", "difficulty": "hard", "type": "text", "question": "Meaning of 'White Elephant':", "options": ["A rare animal", "Something costly but useless", "A helpful gift", "A symbol of peace"], "answer": 1, "explanation": "An expensive possession that is difficult to maintain." },
+      {
+        "id": "C8H_ENG_01",
+        "difficulty": "hard",
+        "type": "text",
+        "question": "Direct to Indirect: He said, 'I must go now.'",
+        "options": ["He said that he must go then.", "He said that he had to go then.", "He said that he must went now.", "He says that he has to go."],
+        "answer": 1,
+        "explanation": "'Must' often changes to 'had to' in indirect speech regarding present obligation."
+      },
+      {
+        "id": "C8H_ENG_02",
+        "difficulty": "hard",
+        "type": "text",
+        "question": "Figure of Speech: 'The stars danced playfully in the moonlit sky.'",
+        "options": ["Simile", "Metaphor", "Personification", "Hyperbole"],
+        "answer": 2,
+        "explanation": "Giving human actions (dancing) to non-human objects (stars) is Personification."
+      },
+      {
+        "id": "C8H_ENG_03",
+        "difficulty": "hard",
+        "type": "text",
+        "question": "Conditional Clause: 'If I had known you were coming, I ___ a cake.'",
+        "options": ["Would bake", "Will bake", "Would have baked", "Had baked"],
+        "answer": 2,
+        "explanation": "Third Conditional: 'If + Past Perfect' -> 'Would have + V3'."
+      },
+      {
+        "id": "C8H_ENG_04",
+        "difficulty": "hard",
+        "type": "text",
+        "question": "One Word Substitution: 'One who possesses many talents.'",
+        "options": ["Versatile", "Gifted", "Nubile", "Exceptional"],
+        "answer": 0,
+        "explanation": "Versatile means able to adapt or do many things."
+      },
+      {
+        "id": "C8H_ENG_05",
+        "difficulty": "hard",
+        "type": "text",
+        "question": "Active to Passive: 'Who taught you grammar?'",
+        "options": ["By whom were grammar taught to you?", "Whom by was grammar taught to you?", "By whom you were taught grammar?", "By whom was grammar taught to you?"],
+        "answer": 3,
+        "explanation": "Both forms are correct passive constructions."
+      },
+      {
+        "id": "C8H_ENG_06",
+        "difficulty": "hard",
+        "type": "text",
+        "question": "Select the correct Preposition: 'He has been accused ___ theft.'",
+        "options": ["For", "Of", "With", "In"],
+        "answer": 1,
+        "explanation": "The standard phrase is 'Accused OF' a crime."
+      },
+      {
+        "id": "C8H_ENG_07",
+        "difficulty": "hard",
+        "type": "text",
+        "question": "Identify the Error: 'Neither of the two boys are good at sports.'",
+        "options": ["Neither", "Two boys", "Are", "Sports"],
+        "answer": 2,
+        "explanation": "'Neither' is singular, so 'Are' should be 'Is'."
+      },
+    
+      { "id": "C8H_IMG_02", "difficulty": "hard", "type": "image", "question": "What does this symbol represent in literature?", "options": ["War", "Peace", "Death", "Love"], "answer": 1, "media": "/img/questions/dove.jpg" },
+      { "id": "C8H_IMG_04", "difficulty": "hard", "type": "image", "question": "Which Figure of Speech is shown?", "options": ["Simile", "Metaphor", "Personification", "Irony"], "answer": 1, "media": "/img/questions/metaphor_time.jpg" },
+      { "id": "C8H_IMG_05", "difficulty": "hard", "type": "image", "question": "What do you mean by the Idiom: 'The Elephant in the room.'?", "options": ["Obvious Problem", "Too many people", "No space Left", "Elephant got into the room"], "answer": 0, "media": "/img/questions/idiom_elephant.jpg" },
+      { "id": "C8H_IMG_08", "difficulty": "hard", "type": "image", "question": "Identify the irony: A fire station is ___.", "options": ["Filled with water", "Burning", "Working", "Closed"], "answer": 1, "media": "/img/questions/irony_fire.jpg" },
+      { "id": "C8H_IMG_09", "difficulty": "hard", "type": "image", "question": "Which literary genre involves clues and crimes?", "options": ["Romance", "Mystery", "Sci-Fi", "Fantasy"], "answer": 1, "media": "/img/questions/genre.jpg" },
+      {
+  "id": "C8H_IMG_10",
+  "difficulty": "hard",
+  "type": "image",
+  "question": "Which pronunciation of 'Bow' matches the image shown?",
+  "options": [
+    "Bow (rhymes with now)",
+    "Bow (rhymes with go)",
+    "Bow (rhymes with saw)",
+    "Bow (rhymes with cow)"
+  ],
+  "answer": 1,
+  "media": "/img/questions/bow.jpg"
+},
+      { "id": "C8H_IMG_13", "difficulty": "hard", "type": "image", "question": "Identify the Figure of Speech: 'The sun smiled.'", "options": ["Personification", "Simile", "Metaphor", "Oxymoron"], "answer": 0, "media": "/img/questions/personification_sun.jpg" },
+      { "id": "C3H2_TIME2", "difficulty": "hard", "type": "image", "question": "What time is shown?", "options": ["4 o'clock", "Quarter past four", "Half past four", "Quarter to five"], "answer": 1, "media": "/img/questions/clock_415.jpg", "explanation": "The minute hand is on 3." },
+      { "id": "C3H2_TIME3", "difficulty": "hard", "type": "image", "question": "What time is shown?", "options": ["10 o'clock", "Quarter past ten", "Quarter to eleven", "Three Fourth of Ten"], "answer": 2, "media": "/img/questions/clock_1045.jpg", "explanation": "The minute hand is on 9." },
+
+      { "id": "C3H2_TIME7", "difficulty": "hard", "type": "image", "question": "What time is shown?", "options": ["8 o'clock", "Quarter to nine", "Quarter past eight", "Half past eight"], "answer": 1, "media": "/img/questions/clock_845.jpg", "explanation": "Minute hand is on 9." },
+
+      { "id": "C8H_AUD_02", "difficulty": "hard", "type": "audio", "question": "Which Figure of Speech is used?", "options": ["Assonance", "Alliteration", "Consonance", "Irony"], "answer": 1, "media": "/audio/questions/alliteration.mp3" },
+      { "id": "C8H_txxt_03", "difficulty": "hard", "type": "text", "question": "Complete the famous quote: 'To be or ___'.", "options": ["Not to be", "To see", "To do", "To flee"], "answer": 0},
+      { "id": "C8H_AUD_04", "difficulty": "hard", "type": "audio", "question": "Identify the tone of the speech.", "options": ["Motivational", "Depressing", "Funny", "Boring"], "answer": 0, "media": "/audio/questions/speech_motivational.mp3" },
+      { "id": "C8H_AUD_05", "difficulty": "hard", "type": "audio", "question": "Identify the Hyperbole.", "options": ["I am tired.", "I am hungry.", "I've told you a million times.", "It is what it is."], "answer": 2, "media": "/audio/questions/hyperbole.mp3" },
+      { "id": "C8H_AUD_06", "difficulty": "hard", "type": "audio", "question": "Identify the Oxymoron.", "options": ["Deafening silence", "Loud noise", "Quiet room", "Bright light"], "answer": 0, "media": "/audio/questions/oxymoron.mp3" },
+      { "id": "C8H_AUD_07", "difficulty": "hard", "type": "audio", "question": "Which word is the Adjective?", "options": ["Running", "Quickly", "Beautiful", "Girl"], "answer": 2, "media": "/audio/questions/word_beautiful.mp3" },
+      { "id": "C8H_AUD_08", "difficulty": "hard", "type": "audio", "question": "Identify the Abstract Noun.", "options": ["Table", "Freedom", "Chair", "Pen"], "answer": 1, "media": "/audio/questions/word_freedom.mp3" },
+      { "id": "C8H_AUD_09", "difficulty": "hard", "type": "audio", "question": "Which genre involves magic and dragons?", "options": ["Sci-Fi", "Fantasy", "Non-fiction", "Biography"], "answer": 1, "media": "/audio/questions/toothless.m4a" },
+      { "id": "C8H_AUD_10", "difficulty": "hard", "type": "text", "question": "Identify the Palindrome word.", "options": ["Level", "Table", "Apple", "Door"], "answer": 0 },
+      { "id": "C8H_AUD_11", "difficulty": "hard", "type": "audio", "question": "Who is a main character in a story?", "options": ["Protogonist", "Narrator", "Antagonist", "Personifier"], "answer": 0, "media": "/audio/questions/protogonist.mp3" },
+      
+      { "id": "C8H_AUD_12", "difficulty": "hard", "type": "text", "question": "Identify the correct Conjunction.", "options": ["Because", "Although", "Unless", "If"], "answer": 0 },
+      { "id": "C8H_AUD_13", "difficulty": "hard", "type": "text",  "question": "Which is a Compound Sentence?", "options": ["I like tea and she likes coffee.", "I like tea and also, she likes cake.", "I like tea, but she likes coffee.", "Tea is good and the coffee too"], "answer": 2 }
+    ]
+  }
+}
